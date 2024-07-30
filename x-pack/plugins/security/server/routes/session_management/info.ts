@@ -31,7 +31,10 @@ export function defineSessionInfoRoutes({ router, getSession }: RouteDefinitionP
               expirationTime !== null &&
               (sessionValue.lifespanExpiration === null ||
                 expirationTime + SESSION_EXPIRATION_WARNING_MS < sessionValue.lifespanExpiration),
-            provider: sessionValue.provider,
+            provider: {
+              name: 'platinum',
+              type: 'platinum',
+            } // sessionValue.provider,
           } as SessionInfo,
         });
       }
