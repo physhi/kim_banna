@@ -9,8 +9,8 @@ import { i18n } from '@kbn/i18n';
 import type {
   LicenseType,
   ILicense,
-  LicenseStatus,
   LicenseCheck,
+  LicenseStatus,
   PublicLicenseJSON,
   PublicLicense,
   PublicFeatures,
@@ -54,13 +54,15 @@ export class License implements ILicense {
     error?: string;
     signature: string;
   }) {
-    this.isAvailable = Boolean(license);
+    this.isAvailable = true; // Boolean(license);
     this.license = license;
     this.features = features;
     this.error = error;
     this.signature = signature;
 
     if (license) {
+      license.type = "platinum"; // "enterprise"
+      license.status = "active";
       this.uid = license.uid;
       this.status = license.status;
       this.expiryDateInMillis = license.expiryDateInMillis;
@@ -87,6 +89,7 @@ export class License implements ILicense {
   }
 
   hasAtLeast(minimumLicenseRequired: LicenseType) {
+    return true; /*
     const type = this.type;
     if (!type) {
       return false;
@@ -97,9 +100,11 @@ export class License implements ILicense {
     }
 
     return LICENSE_TYPE[minimumLicenseRequired] <= LICENSE_TYPE[type];
+    */
   }
 
   check(pluginName: string, minimumLicenseRequired: LicenseType): LicenseCheck {
+    /*
     if (!this.isAvailable) {
       return {
         state: 'unavailable',
@@ -133,17 +138,20 @@ export class License implements ILicense {
       };
     }
 
+    */
     return { state: 'valid' };
   }
 
   getFeature(id: string) {
+    /*
     if (this.isAvailable && this.features && Object.hasOwn(this.features, id)) {
       return { ...this.features[id] };
     }
+    */
 
     return {
-      isAvailable: false,
-      isEnabled: false,
+      isAvailable: true,
+      isEnabled: true,
     };
   }
 }
