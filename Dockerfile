@@ -1,26 +1,24 @@
-FROM node:20.15.1-bookworm as BUILD_IMAGE
+FROM node:20.15.1-bookworm as BUILDER
 
-RUN npm install -g yarn@1.22.22
+# RUN npm install -g yarn@1.22.22
+RUN npm install -g npm@10.8.2
 RUN npm install -g pnpm
 RUN pwd
 
 WORKDIR /home/kibana
 COPY . /home/kibana
-RUN yarn kbn bootstrap --allow-root
-RUN yarn build --skip-os-packages --skip-archives --release
+RUN yarn kbn bootstrap --allow-root && yarn build --skip-os-packages --skip-archives --release --skip-cdn-assets --epr-registry production
 
-FROM ubuntu:20
+FROM node:20.15.1-bookworm
 
-ENV ARTIFACT_NAME=kibana-8.15.0-SNAPSHOT
+ENV ARTIFACT_NAME=kibana-8.15.0
 ENV APP_HOME=/usr/share/kibana
 
-RUN groupadd -g 1000 kibana && \
-    adduser --uid 1000 --gid 1000 --home $APP_HOME kibana && \
-    adduser kibana root && \
-    chown -R 0:0 $APP_HOME
-
 WORKDIR $APP_HOME
-COPY --from=TEMP_BUILD_IMAGE /usr/app/$ARTIFACT_NAME-linux-x86_64/ $APP_HOME
+COPY --from=BUILDER /home/kibana/build/default/$ARTIFACT_NAME-linux-x86_64/ $APP_HOME
+
+RUN chown -R node:0 $APP_HOME
 
 EXPOSE 5601
-
+CMD ["yarn", "start"]
+USER 1000:0
