@@ -5,13 +5,24 @@
  * 2.0.
  */
 
-import { BaseChatModel } from '@langchain/core/language_models/chat_models';
 import { StringWithAutocomplete } from '@langchain/core/dist/utils/types';
+import { BaseChatModel } from '@langchain/core/language_models/chat_models';
+import { NodeType } from '../constants';
+import { AgentState, NodeParamsBase } from '../types';
 import { AGENT_NODE_TAG } from './run_agent';
-import { AgentState } from '../types';
 
-export const RESPOND_NODE = 'respond';
-export const respond = async ({ llm, state }: { llm: BaseChatModel; state: AgentState }) => {
+export interface RespondParams extends NodeParamsBase {
+  state: AgentState;
+  model: BaseChatModel;
+}
+
+export async function respond({
+  logger,
+  state,
+  model,
+}: RespondParams): Promise<Partial<AgentState>> {
+  logger.debug(`${NodeType.RESPOND}: Node state:\n${JSON.stringify(state, null, 2)}`);
+
   if (state?.agentOutcome && 'returnValues' in state.agentOutcome) {
     const userMessage = [
       'user',
@@ -21,7 +32,7 @@ export const respond = async ({ llm, state }: { llm: BaseChatModel; state: Agent
     Do not verify, confirm or anything else. Just reply with the same content as provided above.`,
     ] as [StringWithAutocomplete<'user'>, string];
 
-    const responseMessage = await llm
+    const responseMessage = await model
       // use AGENT_NODE_TAG to identify as agent node for stream parsing
       .withConfig({ runName: 'Summarizer', tags: [AGENT_NODE_TAG] })
       .invoke([userMessage]);
@@ -33,7 +44,8 @@ export const respond = async ({ llm, state }: { llm: BaseChatModel; state: Agent
           output: responseMessage.content,
         },
       },
+      lastNode: NodeType.RESPOND,
     };
   }
-  return state;
-};
+  return { lastNode: NodeType.RESPOND };
+}
