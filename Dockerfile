@@ -7,11 +7,12 @@ RUN pwd
 
 WORKDIR /home/kibana
 COPY . /home/kibana
-RUN yarn kbn bootstrap --allow-root && yarn build --skip-os-packages --skip-archives --release --skip-cdn-assets --epr-registry production
+RUN yarn kbn bootstrap --allow-root --skip-os-packages
+RUN yarn build --skip-os-packages --skip-archives --release --skip-cdn-assets --epr-registry production
 
 FROM node:20.15.1-bookworm
 
-ENV ARTIFACT_NAME=kibana-8.15.0
+ENV ARTIFACT_NAME=kibana-8.15.2
 ENV APP_HOME=/usr/share/kibana
 
 WORKDIR $APP_HOME
