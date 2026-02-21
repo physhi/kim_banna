@@ -29,9 +29,11 @@
           "\nAdded for now while doing the i18n upgrade.\nTODO: remove in a separate PR and update the 200+ test files we have using this to simply\nuse the `I18nProvider` and the `IntlShape` instead of `InjectedIntl`."
         ],
         "signature": [
-          "({ children, }: React.PropsWithChildren<React.PropsWithChildren<{ locale?: string | undefined; messages?: unknown; }>>) => JSX.Element"
+          "({ children, }: React.PropsWithChildren<{ locale?: string | undefined; messages?: unknown; }>) => React.JSX.Element"
         ],
-        "path": "packages/kbn-i18n-react/src/compatiblity_layer.tsx",
+        "path": "src/platform/packages/shared/kbn-i18n-react/src/compatiblity_layer.tsx",
+        "lineNumber": 48,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -43,9 +45,11 @@
             "label": "{\n  children,\n}",
             "description": [],
             "signature": [
-              "React.PropsWithChildren<React.PropsWithChildren<{ locale?: string | undefined; messages?: unknown; }>>"
+              "React.PropsWithChildren<{ locale?: string | undefined; messages?: unknown; }>"
             ],
-            "path": "packages/kbn-i18n-react/src/compatiblity_layer.tsx",
+            "path": "src/platform/packages/shared/kbn-i18n-react/src/compatiblity_layer.tsx",
+            "lineNumber": 48,
+            "columnNumber": 96,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -67,6 +71,8 @@
           "<string> & { value: string | number | Date | undefined; children?(formattedDate: string): React.ReactElement<any, string | React.JSXElementConstructor<any>> | null; }>"
         ],
         "path": "node_modules/react-intl/index.d.ts",
+        "lineNumber": 19,
+        "columnNumber": 22,
         "deprecated": false,
         "trackAdoption": false,
         "returnComment": [],
@@ -74,14 +80,16 @@
           {
             "parentPluginId": "@kbn/i18n-react",
             "id": "def-common.FormattedDate.$1",
-            "type": "CompoundType",
+            "type": "Uncategorized",
             "tags": [],
             "label": "props",
             "description": [],
             "signature": [
-              "P & { children?: React.ReactNode; }"
+              "P"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 10,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -95,7 +103,9 @@
             "signature": [
               "any"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 20,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -117,6 +127,8 @@
           "<\"number\"> & { value: number; children?(formattedNumber: string): React.ReactElement<any, string | React.JSXElementConstructor<any>> | null; }>"
         ],
         "path": "node_modules/react-intl/index.d.ts",
+        "lineNumber": 27,
+        "columnNumber": 22,
         "deprecated": false,
         "trackAdoption": false,
         "returnComment": [],
@@ -124,14 +136,16 @@
           {
             "parentPluginId": "@kbn/i18n-react",
             "id": "def-common.FormattedNumber.$1",
-            "type": "CompoundType",
+            "type": "Uncategorized",
             "tags": [],
             "label": "props",
             "description": [],
             "signature": [
-              "P & { children?: React.ReactNode; }"
+              "P"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 10,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -145,7 +159,9 @@
             "signature": [
               "any"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 20,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -163,6 +179,8 @@
           "React.FunctionComponent<Props>"
         ],
         "path": "node_modules/react-intl/src/components/plural.d.ts",
+        "lineNumber": 13,
+        "columnNumber": 15,
         "deprecated": false,
         "trackAdoption": false,
         "returnComment": [],
@@ -170,14 +188,16 @@
           {
             "parentPluginId": "@kbn/i18n-react",
             "id": "def-common.FormattedPlural.$1",
-            "type": "CompoundType",
+            "type": "Uncategorized",
             "tags": [],
             "label": "props",
             "description": [],
             "signature": [
-              "P & { children?: React.ReactNode; }"
+              "P"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 10,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -191,7 +211,9 @@
             "signature": [
               "any"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 20,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -216,9 +238,11 @@
             "section": "def-common.FormattedRelativeProps",
             "text": "FormattedRelativeProps"
           },
-          ") => JSX.Element"
+          ") => React.JSX.Element"
         ],
-        "path": "packages/kbn-i18n-react/src/compatiblity_layer.tsx",
+        "path": "src/platform/packages/shared/kbn-i18n-react/src/compatiblity_layer.tsx",
+        "lineNumber": 25,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -238,7 +262,9 @@
                 "text": "FormattedRelativeProps"
               }
             ],
-            "path": "packages/kbn-i18n-react/src/compatiblity_layer.tsx",
+            "path": "src/platform/packages/shared/kbn-i18n-react/src/compatiblity_layer.tsx",
+            "lineNumber": 25,
+            "columnNumber": 35,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -260,6 +286,8 @@
           ">"
         ],
         "path": "node_modules/react-intl/src/components/relative.d.ts",
+        "lineNumber": 10,
+        "columnNumber": 15,
         "deprecated": false,
         "trackAdoption": false,
         "returnComment": [],
@@ -267,14 +295,16 @@
           {
             "parentPluginId": "@kbn/i18n-react",
             "id": "def-common.FormattedRelativeTime.$1",
-            "type": "CompoundType",
+            "type": "Uncategorized",
             "tags": [],
             "label": "props",
             "description": [],
             "signature": [
-              "P & { children?: React.ReactNode; }"
+              "P"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 10,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -288,7 +318,9 @@
             "signature": [
               "any"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 20,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -308,6 +340,8 @@
           "<string> & { value: string | number | Date | undefined; children?(formattedTime: string): React.ReactElement<any, string | React.JSXElementConstructor<any>> | null; }>"
         ],
         "path": "node_modules/react-intl/index.d.ts",
+        "lineNumber": 23,
+        "columnNumber": 22,
         "deprecated": false,
         "trackAdoption": false,
         "returnComment": [],
@@ -315,14 +349,16 @@
           {
             "parentPluginId": "@kbn/i18n-react",
             "id": "def-common.FormattedTime.$1",
-            "type": "CompoundType",
+            "type": "Uncategorized",
             "tags": [],
             "label": "props",
             "description": [],
             "signature": [
-              "P & { children?: React.ReactNode; }"
+              "P"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 10,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -336,7 +372,9 @@
             "signature": [
               "any"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 20,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -353,9 +391,11 @@
           "\nThe library uses the provider pattern to scope an i18n context to a tree\nof components. This component is used to setup the i18n context for a tree.\nIntlProvider should wrap react app's root component (inside each react render method)."
         ],
         "signature": [
-          "({ children }: { children?: React.ReactNode; }) => JSX.Element"
+          "({ children }: { children?: React.ReactNode; }) => React.JSX.Element"
         ],
-        "path": "packages/kbn-i18n-react/src/provider.tsx",
+        "path": "src/platform/packages/shared/kbn-i18n-react/src/provider.tsx",
+        "lineNumber": 20,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -369,7 +409,9 @@
             "signature": [
               "{ children?: React.ReactNode; }"
             ],
-            "path": "packages/kbn-i18n-react/src/provider.tsx",
+            "path": "src/platform/packages/shared/kbn-i18n-react/src/provider.tsx",
+            "lineNumber": 20,
+            "columnNumber": 62,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -393,6 +435,8 @@
           "<P>> & { WrappedComponent: React.ComponentType<P>; }"
         ],
         "path": "node_modules/react-intl/src/components/injectIntl.d.ts",
+        "lineNumber": 34,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -407,6 +451,8 @@
               "React.ComponentType<P>"
             ],
             "path": "node_modules/react-intl/src/components/injectIntl.d.ts",
+            "lineNumber": 34,
+            "columnNumber": 150,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -423,6 +469,8 @@
               "<IntlPropName, false> | undefined"
             ],
             "path": "node_modules/react-intl/src/components/injectIntl.d.ts",
+            "lineNumber": 34,
+            "columnNumber": 192,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": false
@@ -446,6 +494,8 @@
           "<React.PropsWithChildren<P>>> & React.RefAttributes<T>> & { WrappedComponent: React.ComponentType<P>; }"
         ],
         "path": "node_modules/react-intl/src/components/injectIntl.d.ts",
+        "lineNumber": 37,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -460,6 +510,8 @@
               "React.ComponentType<P>"
             ],
             "path": "node_modules/react-intl/src/components/injectIntl.d.ts",
+            "lineNumber": 37,
+            "columnNumber": 190,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -476,6 +528,8 @@
               "<IntlPropName, true> | undefined"
             ],
             "path": "node_modules/react-intl/src/components/injectIntl.d.ts",
+            "lineNumber": 37,
+            "columnNumber": 232,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": false
@@ -496,6 +550,8 @@
           "IntlShape"
         ],
         "path": "node_modules/react-intl/src/components/useIntl.d.ts",
+        "lineNumber": 2,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [],
@@ -511,7 +567,9 @@
         "tags": [],
         "label": "FormattedRelativeProps",
         "description": [],
-        "path": "packages/kbn-i18n-react/src/compatiblity_layer.tsx",
+        "path": "src/platform/packages/shared/kbn-i18n-react/src/compatiblity_layer.tsx",
+        "lineNumber": 18,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -525,7 +583,9 @@
             "signature": [
               "string | number | Date"
             ],
-            "path": "packages/kbn-i18n-react/src/compatiblity_layer.tsx",
+            "path": "src/platform/packages/shared/kbn-i18n-react/src/compatiblity_layer.tsx",
+            "lineNumber": 19,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -539,7 +599,9 @@
             "signature": [
               "number | undefined"
             ],
-            "path": "packages/kbn-i18n-react/src/compatiblity_layer.tsx",
+            "path": "src/platform/packages/shared/kbn-i18n-react/src/compatiblity_layer.tsx",
+            "lineNumber": 20,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -562,6 +624,8 @@
           "<React.ReactNode>"
         ],
         "path": "node_modules/react-intl/src/types.d.ts",
+        "lineNumber": 9,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -576,6 +640,8 @@
               "Formatters"
             ],
             "path": "node_modules/react-intl/src/types.d.ts",
+            "lineNumber": 10,
+            "columnNumber": 5,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -595,7 +661,9 @@
         "signature": [
           "IntlShape"
         ],
-        "path": "packages/kbn-i18n-react/src/compatiblity_layer.tsx",
+        "path": "src/platform/packages/shared/kbn-i18n-react/src/compatiblity_layer.tsx",
+        "lineNumber": 54,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -610,15 +678,17 @@
         "signature": [
           "React.ComponentClass<",
           "Props",
-          "<Record<string, string | number | boolean | {} | Date | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | ",
+          "<Record<string, string | number | boolean | Date | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | ",
           "FormatXMLElementFn",
           "<React.ReactNode, React.ReactNode> | null | undefined>>, any> | React.FunctionComponent<",
           "Props",
-          "<Record<string, string | number | boolean | {} | Date | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | ",
+          "<Record<string, string | number | boolean | Date | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | ",
           "FormatXMLElementFn",
           "<React.ReactNode, React.ReactNode> | null | undefined>>>"
         ],
         "path": "node_modules/react-intl/src/components/message.d.ts",
+        "lineNumber": 10,
+        "columnNumber": 15,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -636,6 +706,8 @@
           "; }"
         ],
         "path": "node_modules/react-intl/src/components/injectIntl.d.ts",
+        "lineNumber": 19,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false

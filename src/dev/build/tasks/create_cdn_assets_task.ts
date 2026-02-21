@@ -1,9 +1,10 @@
 /*
  * Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
- * or more contributor license agreements. Licensed under the Elastic License
- * 2.0 and the Server Side Public License, v 1; you may not use this file except
- * in compliance with, at your election, the Elastic License 2.0 or the Server
- * Side Public License, v 1.
+ * or more contributor license agreements. Licensed under the "Elastic License
+ * 2.0", the "GNU Affero General Public License v3.0 only", and the "Server Side
+ * Public License v 1"; you may not use this file except in compliance with, at
+ * your election, the "Elastic License 2.0", the "GNU Affero General Public
+ * License v3.0 only", or the "Server Side Public License, v 1".
  */
 
 import { readFileSync } from 'fs';
@@ -18,7 +19,8 @@ import { i18n, i18nLoader } from '@kbn/i18n';
 import del from 'del';
 import globby from 'globby';
 
-import { mkdirp, compressTar, Task, copyAll, write } from '../lib';
+import type { Task } from '../lib';
+import { mkdirp, compressTar, copyAll, write } from '../lib';
 
 export const CreateCdnAssets: Task = {
   description: 'Creating CDN assets',
@@ -50,7 +52,7 @@ export const CreateCdnAssets: Task = {
       const manifest = Jsonc.parse(readFileSync(path, 'utf8')) as any;
       if (manifest?.plugin?.id) {
         const pluginRoot = resolve(dirname(path));
-        // packages/core/apps/core-apps-server-internal/src/core_app.ts
+        // src/core/packages/apps/server-internal/src/core_app.ts
         const assetsSource = resolve(pluginRoot, 'public', 'assets');
         const assetsDest = resolve(assets, buildSha, 'plugins', manifest.plugin.id, 'assets');
         try {
@@ -62,7 +64,7 @@ export const CreateCdnAssets: Task = {
         }
 
         try {
-          // packages/core/apps/core-apps-server-internal/src/bundle_routes/register_bundle_routes.ts
+          // src/core/packages/apps/server-internal/src/bundle_routes/register_bundle_routes.ts
           const bundlesSource = resolve(pluginRoot, 'target', 'public');
           const bundlesDest = resolve(bundles, 'plugin', manifest.plugin.id, '1.0.0');
           await access(bundlesSource);
@@ -75,7 +77,7 @@ export const CreateCdnAssets: Task = {
       }
     });
 
-    // packages/core/apps/core-apps-server-internal/src/bundle_routes/register_bundle_routes.ts
+    // src/core/packages/apps/server-internal/src/bundle_routes/register_bundle_routes.ts
     await copyAll(
       resolve(buildSource, 'node_modules/@kbn/ui-shared-deps-npm/shared_built_assets'),
       resolve(bundles, 'kbn-ui-shared-deps-npm')
@@ -93,10 +95,14 @@ export const CreateCdnAssets: Task = {
       resolve(bundles, 'kbn-monaco')
     );
 
-    // packages/core/apps/core-apps-server-internal/src/core_app.ts
+    // src/core/packages/apps/server-internal/src/core_app.ts
     await copyAll(
       resolve(buildSource, 'node_modules/@kbn/core-apps-server-internal/assets'),
       resolve(assets, buildSha, 'ui')
+    );
+    await copyAll(
+      resolve(buildSource, 'node_modules/@elastic/charts/dist'),
+      resolve(assets, buildSha, 'ui', 'charts')
     );
 
     await compressTar({

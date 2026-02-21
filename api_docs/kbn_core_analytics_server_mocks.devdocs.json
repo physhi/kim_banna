@@ -22,7 +22,9 @@
         "tags": [],
         "label": "analyticsServiceMock",
         "description": [],
-        "path": "packages/core/analytics/core-analytics-server-mocks/src/analytics_service.mock.ts",
+        "path": "src/core/packages/analytics/server-mocks/src/analytics_service.mock.ts",
+        "lineNumber": 63,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -36,7 +38,9 @@
             "signature": [
               "() => jest.Mocked<AnalyticsServiceContract>"
             ],
-            "path": "packages/core/analytics/core-analytics-server-mocks/src/analytics_service.mock.ts",
+            "path": "src/core/packages/analytics/server-mocks/src/analytics_service.mock.ts",
+            "lineNumber": 64,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -51,16 +55,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-analytics-server",
-                "scope": "server",
-                "docId": "kibKbnCoreAnalyticsServerPluginApi",
-                "section": "def-server.AnalyticsServicePreboot",
-                "text": "AnalyticsServicePreboot"
-              },
+              "AnalyticsServicePreboot",
               ">"
             ],
-            "path": "packages/core/analytics/core-analytics-server-mocks/src/analytics_service.mock.ts",
+            "path": "src/core/packages/analytics/server-mocks/src/analytics_service.mock.ts",
+            "lineNumber": 65,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -75,16 +75,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-analytics-server",
-                "scope": "server",
-                "docId": "kibKbnCoreAnalyticsServerPluginApi",
-                "section": "def-server.AnalyticsServiceSetup",
-                "text": "AnalyticsServiceSetup"
-              },
+              "AnalyticsServiceSetup",
               ">"
             ],
-            "path": "packages/core/analytics/core-analytics-server-mocks/src/analytics_service.mock.ts",
+            "path": "src/core/packages/analytics/server-mocks/src/analytics_service.mock.ts",
+            "lineNumber": 66,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -99,16 +95,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-analytics-server",
-                "scope": "server",
-                "docId": "kibKbnCoreAnalyticsServerPluginApi",
-                "section": "def-server.AnalyticsServiceStart",
-                "text": "AnalyticsServiceStart"
-              },
+              "AnalyticsServiceStart",
               ">"
             ],
-            "path": "packages/core/analytics/core-analytics-server-mocks/src/analytics_service.mock.ts",
+            "path": "src/core/packages/analytics/server-mocks/src/analytics_service.mock.ts",
+            "lineNumber": 67,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],

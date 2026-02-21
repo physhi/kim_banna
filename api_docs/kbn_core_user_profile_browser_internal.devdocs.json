@@ -10,34 +10,18 @@
         "label": "UserProfileService",
         "description": [],
         "signature": [
-          {
-            "pluginId": "@kbn/core-user-profile-browser-internal",
-            "scope": "public",
-            "docId": "kibKbnCoreUserProfileBrowserInternalPluginApi",
-            "section": "def-public.UserProfileService",
-            "text": "UserProfileService"
-          },
+          "UserProfileService",
           " implements ",
           "CoreService",
           "<",
-          {
-            "pluginId": "@kbn/core-user-profile-browser",
-            "scope": "public",
-            "docId": "kibKbnCoreUserProfileBrowserPluginApi",
-            "section": "def-public.UserProfileServiceSetup",
-            "text": "UserProfileServiceSetup"
-          },
+          "UserProfileServiceSetup",
           ", ",
-          {
-            "pluginId": "@kbn/core-user-profile-browser",
-            "scope": "public",
-            "docId": "kibKbnCoreUserProfileBrowserPluginApi",
-            "section": "def-public.UserProfileService",
-            "text": "UserProfileService"
-          },
+          "UserProfileService",
           ">"
         ],
-        "path": "packages/core/user-profile/core-user-profile-browser-internal/src/user_profile_service.ts",
+        "path": "src/core/packages/user-profile/browser-internal/src/user_profile_service.ts",
+        "lineNumber": 19,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -51,7 +35,9 @@
             "signature": [
               "any"
             ],
-            "path": "packages/core/user-profile/core-user-profile-browser-internal/src/user_profile_service.ts",
+            "path": "src/core/packages/user-profile/browser-internal/src/user_profile_service.ts",
+            "lineNumber": 25,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -65,7 +51,9 @@
                 "signature": [
                   "CoreContext"
                 ],
-                "path": "packages/core/user-profile/core-user-profile-browser-internal/src/user_profile_service.ts",
+                "path": "src/core/packages/user-profile/browser-internal/src/user_profile_service.ts",
+                "lineNumber": 25,
+                "columnNumber": 15,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -82,15 +70,11 @@
             "description": [],
             "signature": [
               "() => ",
-              {
-                "pluginId": "@kbn/core-user-profile-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreUserProfileBrowserPluginApi",
-                "section": "def-public.UserProfileServiceSetup",
-                "text": "UserProfileServiceSetup"
-              }
+              "UserProfileServiceSetup"
             ],
-            "path": "packages/core/user-profile/core-user-profile-browser-internal/src/user_profile_service.ts",
+            "path": "src/core/packages/user-profile/browser-internal/src/user_profile_service.ts",
+            "lineNumber": 29,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -105,15 +89,11 @@
             "description": [],
             "signature": [
               "() => ",
-              {
-                "pluginId": "@kbn/core-user-profile-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreUserProfileBrowserPluginApi",
-                "section": "def-public.UserProfileService",
-                "text": "UserProfileService"
-              }
+              "UserProfileService"
             ],
-            "path": "packages/core/user-profile/core-user-profile-browser-internal/src/user_profile_service.ts",
+            "path": "src/core/packages/user-profile/browser-internal/src/user_profile_service.ts",
+            "lineNumber": 40,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -129,7 +109,9 @@
             "signature": [
               "() => void"
             ],
-            "path": "packages/core/user-profile/core-user-profile-browser-internal/src/user_profile_service.ts",
+            "path": "src/core/packages/user-profile/browser-internal/src/user_profile_service.ts",
+            "lineNumber": 48,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -151,15 +133,11 @@
         "label": "InternalUserProfileServiceSetup",
         "description": [],
         "signature": [
-          {
-            "pluginId": "@kbn/core-user-profile-browser",
-            "scope": "public",
-            "docId": "kibKbnCoreUserProfileBrowserPluginApi",
-            "section": "def-public.UserProfileServiceSetup",
-            "text": "UserProfileServiceSetup"
-          }
+          "UserProfileServiceSetup"
         ],
-        "path": "packages/core/user-profile/core-user-profile-browser-internal/src/internal_contracts.ts",
+        "path": "src/core/packages/user-profile/browser-internal/src/internal_contracts.ts",
+        "lineNumber": 15,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -172,15 +150,11 @@
         "label": "InternalUserProfileServiceStart",
         "description": [],
         "signature": [
-          {
-            "pluginId": "@kbn/core-user-profile-browser",
-            "scope": "public",
-            "docId": "kibKbnCoreUserProfileBrowserPluginApi",
-            "section": "def-public.UserProfileService",
-            "text": "UserProfileService"
-          }
+          "UserProfileService"
         ],
-        "path": "packages/core/user-profile/core-user-profile-browser-internal/src/internal_contracts.ts",
+        "path": "src/core/packages/user-profile/browser-internal/src/internal_contracts.ts",
+        "lineNumber": 16,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false

@@ -22,7 +22,9 @@
         "tags": [],
         "label": "userProfileServiceMock",
         "description": [],
-        "path": "packages/core/user-profile/core-user-profile-server-mocks/src/user_profile_service.mock.ts",
+        "path": "src/core/packages/user-profile/server-mocks/src/user_profile_service.mock.ts",
+        "lineNumber": 75,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -36,7 +38,9 @@
             "signature": [
               "() => { setup: jest.Mock<any, any, any>; start: jest.Mock<any, any, any>; stop: jest.Mock<any, any, any>; }"
             ],
-            "path": "packages/core/user-profile/core-user-profile-server-mocks/src/user_profile_service.mock.ts",
+            "path": "src/core/packages/user-profile/server-mocks/src/user_profile_service.mock.ts",
+            "lineNumber": 76,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -51,16 +55,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-user-profile-server",
-                "scope": "server",
-                "docId": "kibKbnCoreUserProfileServerPluginApi",
-                "section": "def-server.UserProfileServiceSetup",
-                "text": "UserProfileServiceSetup"
-              },
+              "UserProfileServiceSetup",
               ">"
             ],
-            "path": "packages/core/user-profile/core-user-profile-server-mocks/src/user_profile_service.mock.ts",
+            "path": "src/core/packages/user-profile/server-mocks/src/user_profile_service.mock.ts",
+            "lineNumber": 77,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -75,16 +75,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-user-profile-server",
-                "scope": "server",
-                "docId": "kibKbnCoreUserProfileServerPluginApi",
-                "section": "def-server.UserProfileService",
-                "text": "UserProfileService"
-              },
+              "UserProfileService",
               ">"
             ],
-            "path": "packages/core/user-profile/core-user-profile-server-mocks/src/user_profile_service.mock.ts",
+            "path": "src/core/packages/user-profile/server-mocks/src/user_profile_service.mock.ts",
+            "lineNumber": 78,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -99,16 +95,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-user-profile-server",
-                "scope": "server",
-                "docId": "kibKbnCoreUserProfileServerPluginApi",
-                "section": "def-server.UserProfileServiceSetup",
-                "text": "UserProfileServiceSetup"
-              },
+              "UserProfileServiceSetup",
               ">"
             ],
-            "path": "packages/core/user-profile/core-user-profile-server-mocks/src/user_profile_service.mock.ts",
+            "path": "src/core/packages/user-profile/server-mocks/src/user_profile_service.mock.ts",
+            "lineNumber": 79,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -123,16 +115,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-user-profile-server-internal",
-                "scope": "server",
-                "docId": "kibKbnCoreUserProfileServerInternalPluginApi",
-                "section": "def-server.InternalUserProfileServiceStart",
-                "text": "InternalUserProfileServiceStart"
-              },
+              "InternalUserProfileServiceStart",
               ">"
             ],
-            "path": "packages/core/user-profile/core-user-profile-server-mocks/src/user_profile_service.mock.ts",
+            "path": "src/core/packages/user-profile/server-mocks/src/user_profile_service.mock.ts",
+            "lineNumber": 80,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -147,16 +135,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-user-profile-server",
-                "scope": "server",
-                "docId": "kibKbnCoreUserProfileServerPluginApi",
-                "section": "def-server.UserProfileRequestHandlerContext",
-                "text": "UserProfileRequestHandlerContext"
-              },
+              "UserProfileRequestHandlerContext",
               ">"
             ],
-            "path": "packages/core/user-profile/core-user-profile-server-mocks/src/user_profile_service.mock.ts",
+            "path": "src/core/packages/user-profile/server-mocks/src/user_profile_service.mock.ts",
+            "lineNumber": 81,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],

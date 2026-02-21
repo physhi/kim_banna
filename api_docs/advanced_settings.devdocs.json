@@ -17,7 +17,9 @@
       "signature": [
         "{ addSpaceSection: (Component: RegistryComponent, queryMatch: QueryMatchFn) => void; addGlobalSection: (Component: RegistryComponent, queryMatch: QueryMatchFn) => void; }"
       ],
-      "path": "src/plugins/advanced_settings/public/types.ts",
+      "path": "src/platform/plugins/private/advanced_settings/public/types.ts",
+      "lineNumber": 20,
+      "columnNumber": 1,
       "deprecated": false,
       "trackAdoption": false,
       "lifecycle": "setup",
@@ -49,7 +51,9 @@
         },
         "[]; }"
       ],
-      "path": "src/plugins/advanced_settings/public/types.ts",
+      "path": "src/platform/plugins/private/advanced_settings/public/types.ts",
+      "lineNumber": 21,
+      "columnNumber": 1,
       "deprecated": false,
       "trackAdoption": false,
       "lifecycle": "start",

@@ -14,7 +14,9 @@
         "tags": [],
         "label": "notificationServiceMock",
         "description": [],
-        "path": "packages/core/notifications/core-notifications-browser-mocks/src/notifications_service.mock.ts",
+        "path": "src/core/packages/notifications/browser-mocks/src/notifications_service.mock.ts",
+        "lineNumber": 58,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -27,16 +29,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-notifications-browser-internal",
-                "scope": "public",
-                "docId": "kibKbnCoreNotificationsBrowserInternalPluginApi",
-                "section": "def-public.NotificationsServiceContract",
-                "text": "NotificationsServiceContract"
-              },
+              "NotificationsServiceContract",
               ">"
             ],
-            "path": "packages/core/notifications/core-notifications-browser-mocks/src/notifications_service.mock.ts",
+            "path": "src/core/packages/notifications/browser-mocks/src/notifications_service.mock.ts",
+            "lineNumber": 59,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -55,20 +53,16 @@
                 "pluginId": "@kbn/utility-types-jest",
                 "scope": "common",
                 "docId": "kibKbnUtilityTypesJestPluginApi",
-                "section": "def-common.MockedKeys",
-                "text": "MockedKeys"
+                "section": "def-common.DeeplyMockedKeys",
+                "text": "DeeplyMockedKeys"
               },
               "<",
-              {
-                "pluginId": "@kbn/core-notifications-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreNotificationsBrowserPluginApi",
-                "section": "def-public.NotificationsSetup",
-                "text": "NotificationsSetup"
-              },
+              "NotificationsSetup",
               ">"
             ],
-            "path": "packages/core/notifications/core-notifications-browser-mocks/src/notifications_service.mock.ts",
+            "path": "src/core/packages/notifications/browser-mocks/src/notifications_service.mock.ts",
+            "lineNumber": 60,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -91,16 +85,12 @@
                 "text": "DeeplyMockedKeys"
               },
               "<",
-              {
-                "pluginId": "@kbn/core-notifications-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreNotificationsBrowserPluginApi",
-                "section": "def-public.NotificationsStart",
-                "text": "NotificationsStart"
-              },
+              "NotificationsStart",
               ">"
             ],
-            "path": "packages/core/notifications/core-notifications-browser-mocks/src/notifications_service.mock.ts",
+            "path": "src/core/packages/notifications/browser-mocks/src/notifications_service.mock.ts",
+            "lineNumber": 61,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],

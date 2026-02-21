@@ -15,7 +15,9 @@
           "SearchResponseIncompleteWarning",
           "[]) => string"
         ],
-        "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/i18n_utils.ts",
+        "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/i18n_utils.ts",
+        "lineNumber": 49,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -30,7 +32,9 @@
               "SearchResponseIncompleteWarning",
               "[]"
             ],
-            "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/i18n_utils.ts",
+            "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/i18n_utils.ts",
+            "lineNumber": 49,
+            "columnNumber": 40,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -51,7 +55,9 @@
           "SearchResponseIncompleteWarning",
           "[]) => string"
         ],
-        "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/i18n_utils.ts",
+        "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/i18n_utils.ts",
+        "lineNumber": 30,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -66,7 +72,9 @@
               "SearchResponseIncompleteWarning",
               "[]"
             ],
-            "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/i18n_utils.ts",
+            "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/i18n_utils.ts",
+            "lineNumber": 30,
+            "columnNumber": 34,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -87,7 +95,9 @@
           "SearchResponseIncompleteWarning",
           ") => boolean"
         ],
-        "path": "packages/kbn-search-response-warnings/src/has_unsupported_downsampled_aggregation_failure.ts",
+        "path": "src/platform/packages/shared/kbn-search-response-warnings/src/has_unsupported_downsampled_aggregation_failure.ts",
+        "lineNumber": 12,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -101,7 +111,9 @@
             "signature": [
               "SearchResponseIncompleteWarning"
             ],
-            "path": "packages/kbn-search-response-warnings/src/has_unsupported_downsampled_aggregation_failure.ts",
+            "path": "src/platform/packages/shared/kbn-search-response-warnings/src/has_unsupported_downsampled_aggregation_failure.ts",
+            "lineNumber": 12,
+            "columnNumber": 61,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -118,9 +130,11 @@
         "label": "SearchResponseWarningsBadge",
         "description": [],
         "signature": [
-          "(props: Props) => JSX.Element | null"
+          "(props: Props) => React.JSX.Element | null"
         ],
-        "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/badge.tsx",
+        "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/badge.tsx",
+        "lineNumber": 21,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -134,7 +148,9 @@
             "signature": [
               "Props"
             ],
-            "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/badge.tsx",
+            "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/badge.tsx",
+            "lineNumber": 21,
+            "columnNumber": 45,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -151,9 +167,11 @@
         "label": "SearchResponseWarningsBadgePopoverContent",
         "description": [],
         "signature": [
-          "(props: Props) => JSX.Element"
+          "(props: Props) => React.JSX.Element"
         ],
-        "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/badge_popover_content.tsx",
+        "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/badge_popover_content.tsx",
+        "lineNumber": 29,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -167,7 +185,9 @@
             "signature": [
               "Props"
             ],
-            "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/badge_popover_content.tsx",
+            "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/badge_popover_content.tsx",
+            "lineNumber": 29,
+            "columnNumber": 59,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -184,9 +204,11 @@
         "label": "SearchResponseWarningsCallout",
         "description": [],
         "signature": [
-          "(props: Props) => JSX.Element | null"
+          "(props: Props) => React.JSX.Element | null"
         ],
-        "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/callout.tsx",
+        "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/callout.tsx",
+        "lineNumber": 20,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -200,7 +222,9 @@
             "signature": [
               "Props"
             ],
-            "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/callout.tsx",
+            "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/callout.tsx",
+            "lineNumber": 20,
+            "columnNumber": 47,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -217,9 +241,11 @@
         "label": "SearchResponseWarningsEmptyPrompt",
         "description": [],
         "signature": [
-          "(props: Props) => JSX.Element"
+          "(props: Props) => React.JSX.Element"
         ],
-        "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/empty_prompt.tsx",
+        "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/empty_prompt.tsx",
+        "lineNumber": 21,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -233,7 +259,9 @@
             "signature": [
               "Props"
             ],
-            "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/empty_prompt.tsx",
+            "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/empty_prompt.tsx",
+            "lineNumber": 21,
+            "columnNumber": 51,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -250,9 +278,11 @@
         "label": "ViewDetailsPopover",
         "description": [],
         "signature": [
-          "(props: Props) => JSX.Element | null"
+          "(props: Props) => React.JSX.Element | null"
         ],
-        "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/view_details_popover.tsx",
+        "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/view_details_popover.tsx",
+        "lineNumber": 21,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -266,7 +296,9 @@
             "signature": [
               "Props"
             ],
-            "path": "packages/kbn-search-response-warnings/src/components/search_response_warnings/view_details_popover.tsx",
+            "path": "src/platform/packages/shared/kbn-search-response-warnings/src/components/search_response_warnings/view_details_popover.tsx",
+            "lineNumber": 21,
+            "columnNumber": 36,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -291,7 +323,9 @@
         "signature": [
           "SearchResponseIncompleteWarning"
         ],
-        "path": "packages/kbn-search-response-warnings/src/types.ts",
+        "path": "src/platform/packages/shared/kbn-search-response-warnings/src/types.ts",
+        "lineNumber": 41,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -316,7 +350,9 @@
           "AggregationsAggregate",
           ">>; requestId: string | undefined; }) => boolean | undefined"
         ],
-        "path": "packages/kbn-search-response-warnings/src/types.ts",
+        "path": "src/platform/packages/shared/kbn-search-response-warnings/src/types.ts",
+        "lineNumber": 47,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "returnComment": [],
@@ -331,7 +367,9 @@
             "signature": [
               "SearchResponseIncompleteWarning"
             ],
-            "path": "packages/kbn-search-response-warnings/src/types.ts",
+            "path": "src/platform/packages/shared/kbn-search-response-warnings/src/types.ts",
+            "lineNumber": 53,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -351,7 +389,9 @@
               "AggregationsAggregate",
               ">>; requestId: string | undefined; }"
             ],
-            "path": "packages/kbn-search-response-warnings/src/types.ts",
+            "path": "src/platform/packages/shared/kbn-search-response-warnings/src/types.ts",
+            "lineNumber": 54,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           }

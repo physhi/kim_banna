@@ -13,7 +13,9 @@
         "description": [
           "\nI18nStart.Context is required by any localizable React component from \\@kbn/i18n and \\@elastic/eui packages\nand is supposed to be used as the topmost component for any i18n-compatible React tree.\n"
         ],
-        "path": "packages/core/i18n/core-i18n-browser/src/types.ts",
+        "path": "src/core/packages/i18n/browser/src/types.ts",
+        "lineNumber": 12,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -29,7 +31,9 @@
             "signature": [
               "({ children }: { children: React.ReactNode; }) => JSX.Element"
             ],
-            "path": "packages/core/i18n/core-i18n-browser/src/types.ts",
+            "path": "src/core/packages/i18n/browser/src/types.ts",
+            "lineNumber": 19,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -40,7 +44,9 @@
                 "tags": [],
                 "label": "{ children }",
                 "description": [],
-                "path": "packages/core/i18n/core-i18n-browser/src/types.ts",
+                "path": "src/core/packages/i18n/browser/src/types.ts",
+                "lineNumber": 22,
+                "columnNumber": 27,
                 "deprecated": false,
                 "trackAdoption": false,
                 "children": [
@@ -52,9 +58,11 @@
                     "label": "children",
                     "description": [],
                     "signature": [
-                      "boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined"
+                      "string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined"
                     ],
-                    "path": "packages/core/i18n/core-i18n-browser/src/types.ts",
+                    "path": "src/core/packages/i18n/browser/src/types.ts",
+                    "lineNumber": 22,
+                    "columnNumber": 29,
                     "deprecated": false,
                     "trackAdoption": false
                   }

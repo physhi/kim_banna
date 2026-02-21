@@ -22,7 +22,9 @@
         "tags": [],
         "label": "coreUsageDataServiceMock",
         "description": [],
-        "path": "packages/core/usage-data/core-usage-data-server-mocks/src/core_usage_data_service.mock.ts",
+        "path": "src/core/packages/usage-data/server-mocks/src/core_usage_data_service.mock.ts",
+        "lineNumber": 179,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -43,16 +45,12 @@
                 "text": "PublicMethodsOf"
               },
               "<",
-              {
-                "pluginId": "@kbn/core-usage-data-server-internal",
-                "scope": "server",
-                "docId": "kibKbnCoreUsageDataServerInternalPluginApi",
-                "section": "def-server.CoreUsageDataService",
-                "text": "CoreUsageDataService"
-              },
+              "CoreUsageDataService",
               ">>"
             ],
-            "path": "packages/core/usage-data/core-usage-data-server-mocks/src/core_usage_data_service.mock.ts",
+            "path": "src/core/packages/usage-data/server-mocks/src/core_usage_data_service.mock.ts",
+            "lineNumber": 180,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -72,7 +70,9 @@
               "InternalCoreUsageDataSetup",
               ">"
             ],
-            "path": "packages/core/usage-data/core-usage-data-server-mocks/src/core_usage_data_service.mock.ts",
+            "path": "src/core/packages/usage-data/server-mocks/src/core_usage_data_service.mock.ts",
+            "lineNumber": 181,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -86,14 +86,10 @@
                 "description": [],
                 "signature": [
                   "{ getUsageStats: jest.MockInstance<Promise<",
-                  {
-                    "pluginId": "@kbn/core-usage-data-server",
-                    "scope": "server",
-                    "docId": "kibKbnCoreUsageDataServerPluginApi",
-                    "section": "def-server.CoreUsageStats",
-                    "text": "CoreUsageStats"
-                  },
-                  ">, [], unknown>; incrementSavedObjectsBulkCreate: jest.MockInstance<Promise<void>, [options: ",
+                  "CoreUsageStats",
+                  ">, [], unknown>; getDeprecatedApiUsageStats: jest.MockInstance<Promise<",
+                  "CoreDeprecatedApiUsageStats",
+                  "[]>, [], unknown>; incrementDeprecatedApi: jest.MockInstance<Promise<void>, [counterName: string, options: { resolved?: boolean | undefined; incrementBy?: number | undefined; }], unknown>; incrementSavedObjectsBulkCreate: jest.MockInstance<Promise<void>, [options: ",
                   "BaseIncrementOptions",
                   "], unknown>; incrementSavedObjectsBulkGet: jest.MockInstance<Promise<void>, [options: ",
                   "BaseIncrementOptions",
@@ -128,7 +124,9 @@
                   "], unknown>; } & ",
                   "ICoreUsageStatsClient"
                 ],
-                "path": "packages/core/usage-data/core-usage-data-server-mocks/src/core_usage_data_service.mock.ts",
+                "path": "src/core/packages/usage-data/server-mocks/src/core_usage_data_service.mock.ts",
+                "lineNumber": 18,
+                "columnNumber": 34,
                 "deprecated": false,
                 "trackAdoption": false
               }
@@ -143,16 +141,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-usage-data-server",
-                "scope": "server",
-                "docId": "kibKbnCoreUsageDataServerPluginApi",
-                "section": "def-server.CoreUsageDataStart",
-                "text": "CoreUsageDataStart"
-              },
+              "CoreUsageDataStart",
               ">"
             ],
-            "path": "packages/core/usage-data/core-usage-data-server-mocks/src/core_usage_data_service.mock.ts",
+            "path": "src/core/packages/usage-data/server-mocks/src/core_usage_data_service.mock.ts",
+            "lineNumber": 182,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -168,7 +162,9 @@
         "tags": [],
         "label": "coreUsageStatsClientMock",
         "description": [],
-        "path": "packages/core/usage-data/core-usage-data-server-mocks/src/core_usage_stats_client.mock.ts",
+        "path": "src/core/packages/usage-data/server-mocks/src/core_usage_stats_client.mock.ts",
+        "lineNumber": 35,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -184,7 +180,9 @@
               "ICoreUsageStatsClient",
               ">"
             ],
-            "path": "packages/core/usage-data/core-usage-data-server-mocks/src/core_usage_stats_client.mock.ts",
+            "path": "src/core/packages/usage-data/server-mocks/src/core_usage_stats_client.mock.ts",
+            "lineNumber": 36,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],

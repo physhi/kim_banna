@@ -5,43 +5,80 @@
     "functions": [
       {
         "parentPluginId": "esql",
-        "id": "def-public.TextBasedLangEditor",
+        "id": "def-public.ESQLLangEditor",
         "type": "Function",
         "tags": [],
-        "label": "TextBasedLangEditor",
+        "label": "ESQLLangEditor",
         "description": [],
         "signature": [
           "(props: ",
           {
-            "pluginId": "@kbn/text-based-editor",
+            "pluginId": "@kbn/esql-editor",
             "scope": "public",
-            "docId": "kibKbnTextBasedEditorPluginApi",
-            "section": "def-public.TextBasedLanguagesEditorProps",
-            "text": "TextBasedLanguagesEditorProps"
+            "docId": "kibKbnEsqlEditorPluginApi",
+            "section": "def-public.ESQLEditorProps",
+            "text": "ESQLEditorProps"
           },
-          ") => JSX.Element"
+          " & Pick<",
+          {
+            "pluginId": "@kbn/restorable-state",
+            "scope": "public",
+            "docId": "kibKbnRestorableStatePluginApi",
+            "section": "def-public.RestorableStateProviderProps",
+            "text": "RestorableStateProviderProps"
+          },
+          "<",
+          {
+            "pluginId": "@kbn/esql-editor",
+            "scope": "public",
+            "docId": "kibKbnEsqlEditorPluginApi",
+            "section": "def-public.ESQLEditorRestorableState",
+            "text": "ESQLEditorRestorableState"
+          },
+          ">, \"initialState\" | \"onInitialStateChange\"> & React.RefAttributes<never>) => React.JSX.Element"
         ],
-        "path": "src/plugins/esql/public/create_editor.tsx",
+        "path": "src/platform/plugins/shared/esql/public/create_editor.tsx",
+        "lineNumber": 17,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
           {
             "parentPluginId": "esql",
-            "id": "def-public.TextBasedLangEditor.$1",
-            "type": "Object",
+            "id": "def-public.ESQLLangEditor.$1",
+            "type": "CompoundType",
             "tags": [],
             "label": "props",
             "description": [],
             "signature": [
               {
-                "pluginId": "@kbn/text-based-editor",
+                "pluginId": "@kbn/esql-editor",
                 "scope": "public",
-                "docId": "kibKbnTextBasedEditorPluginApi",
-                "section": "def-public.TextBasedLanguagesEditorProps",
-                "text": "TextBasedLanguagesEditorProps"
-              }
+                "docId": "kibKbnEsqlEditorPluginApi",
+                "section": "def-public.ESQLEditorProps",
+                "text": "ESQLEditorProps"
+              },
+              " & Pick<",
+              {
+                "pluginId": "@kbn/restorable-state",
+                "scope": "public",
+                "docId": "kibKbnRestorableStatePluginApi",
+                "section": "def-public.RestorableStateProviderProps",
+                "text": "RestorableStateProviderProps"
+              },
+              "<",
+              {
+                "pluginId": "@kbn/esql-editor",
+                "scope": "public",
+                "docId": "kibKbnEsqlEditorPluginApi",
+                "section": "def-public.ESQLEditorRestorableState",
+                "text": "ESQLEditorRestorableState"
+              },
+              ">, \"initialState\" | \"onInitialStateChange\"> & React.RefAttributes<never>"
             ],
-            "path": "src/plugins/esql/public/create_editor.tsx",
+            "path": "src/platform/plugins/shared/esql/public/create_editor.tsx",
+            "lineNumber": 17,
+            "columnNumber": 32,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -54,479 +91,160 @@
     "interfaces": [
       {
         "parentPluginId": "esql",
-        "id": "def-public.EsqlPluginStart",
+        "id": "def-public.DataErrorsControl",
         "type": "Interface",
         "tags": [],
-        "label": "EsqlPluginStart",
+        "label": "DataErrorsControl",
         "description": [],
-        "path": "src/plugins/esql/public/types.ts",
+        "path": "src/platform/packages/private/kbn-esql-editor/src/types.ts",
+        "lineNumber": 32,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
           {
             "parentPluginId": "esql",
-            "id": "def-public.EsqlPluginStart.Editor",
-            "type": "CompoundType",
+            "id": "def-public.DataErrorsControl.enabled",
+            "type": "boolean",
             "tags": [],
-            "label": "Editor",
+            "label": "enabled",
+            "description": [],
+            "path": "src/platform/packages/private/kbn-esql-editor/src/types.ts",
+            "lineNumber": 33,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "esql",
+            "id": "def-public.DataErrorsControl.onChange",
+            "type": "Function",
+            "tags": [],
+            "label": "onChange",
             "description": [],
             "signature": [
-              "React.ComponentClass<",
-              {
-                "pluginId": "@kbn/text-based-editor",
-                "scope": "public",
-                "docId": "kibKbnTextBasedEditorPluginApi",
-                "section": "def-public.TextBasedLanguagesEditorProps",
-                "text": "TextBasedLanguagesEditorProps"
-              },
-              ", any> | React.FunctionComponent<",
-              {
-                "pluginId": "@kbn/text-based-editor",
-                "scope": "public",
-                "docId": "kibKbnTextBasedEditorPluginApi",
-                "section": "def-public.TextBasedLanguagesEditorProps",
-                "text": "TextBasedLanguagesEditorProps"
-              },
-              ">"
+              "(value: boolean) => void"
             ],
-            "path": "src/plugins/esql/public/types.ts",
-            "deprecated": false,
-            "trackAdoption": false
-          }
-        ],
-        "initialIsOpen": false
-      },
-      {
-        "parentPluginId": "esql",
-        "id": "def-public.TextBasedLanguagesEditorProps",
-        "type": "Interface",
-        "tags": [],
-        "label": "TextBasedLanguagesEditorProps",
-        "description": [],
-        "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-        "deprecated": false,
-        "trackAdoption": false,
-        "children": [
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.query",
-            "type": "Object",
-            "tags": [],
-            "label": "query",
-            "description": [
-              "The aggregate type query"
-            ],
-            "signature": [
-              "{ esql: string; }"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.onTextLangQueryChange",
-            "type": "Function",
-            "tags": [],
-            "label": "onTextLangQueryChange",
-            "description": [
-              "Callback running everytime the query changes"
-            ],
-            "signature": [
-              "(query: ",
-              {
-                "pluginId": "@kbn/es-query",
-                "scope": "common",
-                "docId": "kibKbnEsQueryPluginApi",
-                "section": "def-common.AggregateQuery",
-                "text": "AggregateQuery"
-              },
-              ") => void"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
+            "path": "src/platform/packages/private/kbn-esql-editor/src/types.ts",
+            "lineNumber": 34,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
               {
                 "parentPluginId": "esql",
-                "id": "def-public.TextBasedLanguagesEditorProps.onTextLangQueryChange.$1",
-                "type": "Object",
-                "tags": [],
-                "label": "query",
-                "description": [],
-                "signature": [
-                  {
-                    "pluginId": "@kbn/es-query",
-                    "scope": "common",
-                    "docId": "kibKbnEsQueryPluginApi",
-                    "section": "def-common.AggregateQuery",
-                    "text": "AggregateQuery"
-                  }
-                ],
-                "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-                "deprecated": false,
-                "trackAdoption": false,
-                "isRequired": true
-              }
-            ],
-            "returnComment": []
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.onTextLangQuerySubmit",
-            "type": "Function",
-            "tags": [],
-            "label": "onTextLangQuerySubmit",
-            "description": [
-              "Callback running when the user submits the query"
-            ],
-            "signature": [
-              "(query?: ",
-              {
-                "pluginId": "@kbn/es-query",
-                "scope": "common",
-                "docId": "kibKbnEsQueryPluginApi",
-                "section": "def-common.AggregateQuery",
-                "text": "AggregateQuery"
-              },
-              " | undefined, abortController?: AbortController | undefined) => Promise<void>"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false,
-            "children": [
-              {
-                "parentPluginId": "esql",
-                "id": "def-public.TextBasedLanguagesEditorProps.onTextLangQuerySubmit.$1",
-                "type": "Object",
-                "tags": [],
-                "label": "query",
-                "description": [],
-                "signature": [
-                  {
-                    "pluginId": "@kbn/es-query",
-                    "scope": "common",
-                    "docId": "kibKbnEsQueryPluginApi",
-                    "section": "def-common.AggregateQuery",
-                    "text": "AggregateQuery"
-                  },
-                  " | undefined"
-                ],
-                "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-                "deprecated": false,
-                "trackAdoption": false,
-                "isRequired": false
-              },
-              {
-                "parentPluginId": "esql",
-                "id": "def-public.TextBasedLanguagesEditorProps.onTextLangQuerySubmit.$2",
-                "type": "Object",
-                "tags": [],
-                "label": "abortController",
-                "description": [],
-                "signature": [
-                  "AbortController | undefined"
-                ],
-                "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-                "deprecated": false,
-                "trackAdoption": false,
-                "isRequired": false
-              }
-            ],
-            "returnComment": []
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.expandCodeEditor",
-            "type": "Function",
-            "tags": [],
-            "label": "expandCodeEditor",
-            "description": [
-              "Can be used to expand/minimize the editor"
-            ],
-            "signature": [
-              "(status: boolean) => void"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false,
-            "children": [
-              {
-                "parentPluginId": "esql",
-                "id": "def-public.TextBasedLanguagesEditorProps.expandCodeEditor.$1",
+                "id": "def-public.DataErrorsControl.onChange.$1",
                 "type": "boolean",
                 "tags": [],
-                "label": "status",
+                "label": "value",
                 "description": [],
                 "signature": [
                   "boolean"
                 ],
-                "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
+                "path": "src/platform/packages/private/kbn-esql-editor/src/types.ts",
+                "lineNumber": 34,
+                "columnNumber": 14,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
               }
             ],
             "returnComment": []
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.isCodeEditorExpanded",
-            "type": "boolean",
-            "tags": [],
-            "label": "isCodeEditorExpanded",
-            "description": [
-              "If it is true, the editor initializes with height EDITOR_INITIAL_HEIGHT_EXPANDED"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.detectedTimestamp",
-            "type": "string",
-            "tags": [],
-            "label": "detectedTimestamp",
-            "description": [
-              "If it is true, the editor displays the message @timestamp found\nThe text based queries are relying on adhoc dataviews which\ncan have an @timestamp timefield or nothing"
-            ],
-            "signature": [
-              "string | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.errors",
-            "type": "Array",
-            "tags": [],
-            "label": "errors",
-            "description": [
-              "Array of errors"
-            ],
-            "signature": [
-              "Error[] | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.warning",
-            "type": "string",
-            "tags": [],
-            "label": "warning",
-            "description": [
-              "Warning string as it comes from ES"
-            ],
-            "signature": [
-              "string | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.isLoading",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "isLoading",
-            "description": [
-              "Disables the editor and displays loading icon in run button\nIt is also used for hiding the history component if it is not defined"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.isDisabled",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "isDisabled",
-            "description": [
-              "Disables the editor"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.isDarkMode",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "isDarkMode",
-            "description": [
-              "Indicator if the editor is on dark mode"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.dataTestSubj",
-            "type": "string",
-            "tags": [],
-            "label": "dataTestSubj",
-            "description": [],
-            "signature": [
-              "string | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.hideMinimizeButton",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "hideMinimizeButton",
-            "description": [
-              "If true it hides the minimize button and the user can't return to the minimized version\nUseful when the application doesn't want to give this capability"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.hideRunQueryText",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "hideRunQueryText",
-            "description": [
-              "Hide the Run query information which appears on the footer"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.editorIsInline",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "editorIsInline",
-            "description": [
-              "This is used for applications (such as the inline editing flyout in dashboards)\nwhich want to add the editor without being part of the Unified search component\nIt renders a submit query button inside the editor"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.disableSubmitAction",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "disableSubmitAction",
-            "description": [
-              "Disables the submit query action"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.allowQueryCancellation",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "allowQueryCancellation",
-            "description": [
-              "when set to true enables query cancellation"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.hideTimeFilterInfo",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "hideTimeFilterInfo",
-            "description": [
-              "hide @timestamp info"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.hideQueryHistory",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "hideQueryHistory",
-            "description": [
-              "hide query history"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
-          },
-          {
-            "parentPluginId": "esql",
-            "id": "def-public.TextBasedLanguagesEditorProps.hideHeaderWhenExpanded",
-            "type": "CompoundType",
-            "tags": [],
-            "label": "hideHeaderWhenExpanded",
-            "description": [
-              "hide header buttons when editor is expanded"
-            ],
-            "signature": [
-              "boolean | undefined"
-            ],
-            "path": "packages/kbn-text-based-editor/src/text_based_languages_editor.tsx",
-            "deprecated": false,
-            "trackAdoption": false
           }
         ],
         "initialIsOpen": false
       }
     ],
     "enums": [],
-    "misc": [],
-    "objects": []
+    "misc": [
+      {
+        "parentPluginId": "esql",
+        "id": "def-public.ESQLEditorProps",
+        "type": "Type",
+        "tags": [],
+        "label": "ESQLEditorProps",
+        "description": [],
+        "signature": [
+          {
+            "pluginId": "@kbn/esql-editor",
+            "scope": "public",
+            "docId": "kibKbnEsqlEditorPluginApi",
+            "section": "def-public.ESQLEditorProps",
+            "text": "ESQLEditorProps"
+          },
+          " & Pick<",
+          {
+            "pluginId": "@kbn/restorable-state",
+            "scope": "public",
+            "docId": "kibKbnRestorableStatePluginApi",
+            "section": "def-public.RestorableStateProviderProps",
+            "text": "RestorableStateProviderProps"
+          },
+          "<",
+          {
+            "pluginId": "@kbn/esql-editor",
+            "scope": "public",
+            "docId": "kibKbnEsqlEditorPluginApi",
+            "section": "def-public.ESQLEditorRestorableState",
+            "text": "ESQLEditorRestorableState"
+          },
+          ">, \"initialState\" | \"onInitialStateChange\"> & React.RefAttributes<never>"
+        ],
+        "path": "src/platform/packages/private/kbn-esql-editor/src/esql_editor.tsx",
+        "lineNumber": 1440,
+        "columnNumber": 1,
+        "deprecated": false,
+        "trackAdoption": false,
+        "initialIsOpen": false
+      }
+    ],
+    "objects": [],
+    "start": {
+      "parentPluginId": "esql",
+      "id": "def-public.EsqlPluginStart",
+      "type": "Interface",
+      "tags": [],
+      "label": "EsqlPluginStart",
+      "description": [],
+      "path": "src/platform/plugins/shared/esql/public/plugin.ts",
+      "lineNumber": 52,
+      "columnNumber": 1,
+      "deprecated": false,
+      "trackAdoption": false,
+      "children": [
+        {
+          "parentPluginId": "esql",
+          "id": "def-public.EsqlPluginStart.variablesService",
+          "type": "Object",
+          "tags": [],
+          "label": "variablesService",
+          "description": [],
+          "signature": [
+            "EsqlVariablesService"
+          ],
+          "path": "src/platform/plugins/shared/esql/public/plugin.ts",
+          "lineNumber": 53,
+          "columnNumber": 3,
+          "deprecated": false,
+          "trackAdoption": false
+        },
+        {
+          "parentPluginId": "esql",
+          "id": "def-public.EsqlPluginStart.isServerless",
+          "type": "boolean",
+          "tags": [],
+          "label": "isServerless",
+          "description": [],
+          "path": "src/platform/plugins/shared/esql/public/plugin.ts",
+          "lineNumber": 54,
+          "columnNumber": 3,
+          "deprecated": false,
+          "trackAdoption": false
+        }
+      ],
+      "lifecycle": "start",
+      "initialIsOpen": true
+    }
   },
   "server": {
     "classes": [],
@@ -534,7 +252,43 @@
     "interfaces": [],
     "enums": [],
     "misc": [],
-    "objects": []
+    "objects": [],
+    "setup": {
+      "parentPluginId": "esql",
+      "id": "def-server.EsqlServerPluginSetup",
+      "type": "Interface",
+      "tags": [],
+      "label": "EsqlServerPluginSetup",
+      "description": [],
+      "path": "src/platform/plugins/shared/esql/server/plugin.ts",
+      "lineNumber": 17,
+      "columnNumber": 1,
+      "deprecated": false,
+      "trackAdoption": false,
+      "children": [
+        {
+          "parentPluginId": "esql",
+          "id": "def-server.EsqlServerPluginSetup.getExtensionsRegistry",
+          "type": "Function",
+          "tags": [],
+          "label": "getExtensionsRegistry",
+          "description": [],
+          "signature": [
+            "() => ",
+            "ESQLExtensionsRegistry"
+          ],
+          "path": "src/platform/plugins/shared/esql/server/plugin.ts",
+          "lineNumber": 18,
+          "columnNumber": 3,
+          "deprecated": false,
+          "trackAdoption": false,
+          "children": [],
+          "returnComment": []
+        }
+      ],
+      "lifecycle": "setup",
+      "initialIsOpen": true
+    }
   },
   "common": {
     "classes": [],

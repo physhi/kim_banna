@@ -15,9 +15,11 @@
         "signature": [
           "(props: ",
           "FormProps",
-          ") => JSX.Element"
+          ") => React.JSX.Element"
         ],
-        "path": "packages/kbn-management/settings/components/form/form.tsx",
+        "path": "src/platform/packages/shared/kbn-management/settings/components/form/form.tsx",
+        "lineNumber": 46,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -33,7 +35,9 @@
             "signature": [
               "FormProps"
             ],
-            "path": "packages/kbn-management/settings/components/form/form.tsx",
+            "path": "src/platform/packages/shared/kbn-management/settings/components/form/form.tsx",
+            "lineNumber": 46,
+            "columnNumber": 22,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -52,7 +56,7 @@
           "\nKibana-specific Provider that maps Kibana plugins and services to a {@link FormProvider}."
         ],
         "signature": [
-          "({ children, ...deps }: React.PropsWithChildren<React.PropsWithChildren<",
+          "({ children, ...deps }: React.PropsWithChildren<",
           {
             "pluginId": "@kbn/management-settings-components-form",
             "scope": "public",
@@ -60,9 +64,11 @@
             "section": "def-public.FormKibanaDependencies",
             "text": "FormKibanaDependencies"
           },
-          ">>) => JSX.Element"
+          ">) => React.JSX.Element"
         ],
-        "path": "packages/kbn-management/settings/components/form/services.tsx",
+        "path": "src/platform/packages/shared/kbn-management/settings/components/form/services.tsx",
+        "lineNumber": 45,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -74,7 +80,7 @@
             "label": "{\n  children,\n  ...deps\n}",
             "description": [],
             "signature": [
-              "React.PropsWithChildren<React.PropsWithChildren<",
+              "React.PropsWithChildren<",
               {
                 "pluginId": "@kbn/management-settings-components-form",
                 "scope": "public",
@@ -82,9 +88,11 @@
                 "section": "def-public.FormKibanaDependencies",
                 "text": "FormKibanaDependencies"
               },
-              ">>"
+              ">"
             ],
-            "path": "packages/kbn-management/settings/components/form/services.tsx",
+            "path": "src/platform/packages/shared/kbn-management/settings/components/form/services.tsx",
+            "lineNumber": 45,
+            "columnNumber": 83,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -105,9 +113,11 @@
         "signature": [
           "({ children, ...services }: ",
           "FormProviderProps",
-          ") => JSX.Element"
+          ") => React.JSX.Element"
         ],
-        "path": "packages/kbn-management/settings/components/form/services.tsx",
+        "path": "src/platform/packages/shared/kbn-management/settings/components/form/services.tsx",
+        "lineNumber": 32,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -121,7 +131,9 @@
             "signature": [
               "FormProviderProps"
             ],
-            "path": "packages/kbn-management/settings/components/form/services.tsx",
+            "path": "src/platform/packages/shared/kbn-management/settings/components/form/services.tsx",
+            "lineNumber": 32,
+            "columnNumber": 30,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -161,7 +173,9 @@
             "text": "FieldInputKibanaDependencies"
           }
         ],
-        "path": "packages/kbn-management/settings/components/form/types.ts",
+        "path": "src/platform/packages/shared/kbn-management/settings/components/form/types.ts",
+        "lineNumber": 52,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -194,7 +208,9 @@
           " & ",
           "Services"
         ],
-        "path": "packages/kbn-management/settings/components/form/types.ts",
+        "path": "src/platform/packages/shared/kbn-management/settings/components/form/types.ts",
+        "lineNumber": 29,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false

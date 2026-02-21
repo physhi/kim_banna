@@ -35,7 +35,9 @@
           },
           " extends Error"
         ],
-        "path": "packages/kbn-search-errors/src/es_error.tsx",
+        "path": "src/platform/packages/shared/kbn-search-errors/src/es_error.tsx",
+        "lineNumber": 25,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -56,7 +58,9 @@
               },
               " | undefined"
             ],
-            "path": "packages/kbn-search-errors/src/es_error.tsx",
+            "path": "src/platform/packages/shared/kbn-search-errors/src/es_error.tsx",
+            "lineNumber": 26,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -70,7 +74,9 @@
             "signature": [
               "any"
             ],
-            "path": "packages/kbn-search-errors/src/es_error.tsx",
+            "path": "src/platform/packages/shared/kbn-search-errors/src/es_error.tsx",
+            "lineNumber": 29,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -90,7 +96,9 @@
                     "text": "IEsError"
                   }
                 ],
-                "path": "packages/kbn-search-errors/src/es_error.tsx",
+                "path": "src/platform/packages/shared/kbn-search-errors/src/es_error.tsx",
+                "lineNumber": 29,
+                "columnNumber": 15,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -105,7 +113,9 @@
                 "signature": [
                   "string"
                 ],
-                "path": "packages/kbn-search-errors/src/es_error.tsx",
+                "path": "src/platform/packages/shared/kbn-search-errors/src/es_error.tsx",
+                "lineNumber": 29,
+                "columnNumber": 30,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -120,7 +130,9 @@
                 "signature": [
                   "() => void"
                 ],
-                "path": "packages/kbn-search-errors/src/es_error.tsx",
+                "path": "src/platform/packages/shared/kbn-search-errors/src/es_error.tsx",
+                "lineNumber": 29,
+                "columnNumber": 47,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -136,9 +148,11 @@
             "label": "getErrorMessage",
             "description": [],
             "signature": [
-              "() => JSX.Element"
+              "() => React.JSX.Element"
             ],
-            "path": "packages/kbn-search-errors/src/es_error.tsx",
+            "path": "src/platform/packages/shared/kbn-search-errors/src/es_error.tsx",
+            "lineNumber": 36,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -152,9 +166,11 @@
             "label": "getActions",
             "description": [],
             "signature": [
-              "() => JSX.Element[]"
+              "() => React.JSX.Element[]"
             ],
-            "path": "packages/kbn-search-errors/src/es_error.tsx",
+            "path": "src/platform/packages/shared/kbn-search-errors/src/es_error.tsx",
+            "lineNumber": 44,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -200,7 +216,9 @@
             "text": "EsError"
           }
         ],
-        "path": "packages/kbn-search-errors/src/create_es_error.ts",
+        "path": "src/platform/packages/shared/kbn-search-errors/src/create_es_error.ts",
+        "lineNumber": 34,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -220,7 +238,9 @@
                 "text": "IEsError"
               }
             ],
-            "path": "packages/kbn-search-errors/src/create_es_error.ts",
+            "path": "src/platform/packages/shared/kbn-search-errors/src/create_es_error.ts",
+            "lineNumber": 35,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -235,7 +255,9 @@
             "signature": [
               "() => void"
             ],
-            "path": "packages/kbn-search-errors/src/create_es_error.ts",
+            "path": "src/platform/packages/shared/kbn-search-errors/src/create_es_error.ts",
+            "lineNumber": 36,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -250,7 +272,9 @@
             "signature": [
               "Services"
             ],
-            "path": "packages/kbn-search-errors/src/create_es_error.ts",
+            "path": "src/platform/packages/shared/kbn-search-errors/src/create_es_error.ts",
+            "lineNumber": 37,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -272,7 +296,9 @@
               },
               " | undefined"
             ],
-            "path": "packages/kbn-search-errors/src/create_es_error.ts",
+            "path": "src/platform/packages/shared/kbn-search-errors/src/create_es_error.ts",
+            "lineNumber": 38,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": false
@@ -293,7 +319,9 @@
         "signature": [
           "(e: any) => boolean"
         ],
-        "path": "packages/kbn-search-errors/src/es_error.tsx",
+        "path": "src/platform/packages/shared/kbn-search-errors/src/es_error.tsx",
+        "lineNumber": 15,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -307,7 +335,9 @@
             "signature": [
               "any"
             ],
-            "path": "packages/kbn-search-errors/src/es_error.tsx",
+            "path": "src/platform/packages/shared/kbn-search-errors/src/es_error.tsx",
+            "lineNumber": 21,
+            "columnNumber": 27,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -326,7 +356,9 @@
         "signature": [
           "(error: Error) => { title: string; body: React.ReactNode; actions?: React.ReactNode[] | undefined; } | undefined"
         ],
-        "path": "packages/kbn-search-errors/src/render_search_error.ts",
+        "path": "src/platform/packages/shared/kbn-search-errors/src/render_search_error.ts",
+        "lineNumber": 14,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -340,7 +372,9 @@
             "signature": [
               "Error"
             ],
-            "path": "packages/kbn-search-errors/src/render_search_error.ts",
+            "path": "src/platform/packages/shared/kbn-search-errors/src/render_search_error.ts",
+            "lineNumber": 15,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -378,7 +412,9 @@
           },
           ">"
         ],
-        "path": "packages/kbn-search-errors/src/types.ts",
+        "path": "src/platform/packages/shared/kbn-search-errors/src/types.ts",
+        "lineNumber": 13,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false

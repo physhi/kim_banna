@@ -22,7 +22,9 @@
         "tags": [],
         "label": "savedObjectsExporterMock",
         "description": [],
-        "path": "packages/core/saved-objects/core-saved-objects-import-export-server-mocks/src/saved_objects_exporter.mock.ts",
+        "path": "src/core/packages/saved-objects/import-export-server-mocks/src/saved_objects_exporter.mock.ts",
+        "lineNumber": 22,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -35,16 +37,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-saved-objects-server",
-                "scope": "server",
-                "docId": "kibKbnCoreSavedObjectsServerPluginApi",
-                "section": "def-server.ISavedObjectsExporter",
-                "text": "ISavedObjectsExporter"
-              },
+              "ISavedObjectsExporter",
               ">"
             ],
-            "path": "packages/core/saved-objects/core-saved-objects-import-export-server-mocks/src/saved_objects_exporter.mock.ts",
+            "path": "src/core/packages/saved-objects/import-export-server-mocks/src/saved_objects_exporter.mock.ts",
+            "lineNumber": 23,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -60,7 +58,9 @@
         "tags": [],
         "label": "savedObjectsImporterMock",
         "description": [],
-        "path": "packages/core/saved-objects/core-saved-objects-import-export-server-mocks/src/saved_objects_importer.mock.ts",
+        "path": "src/core/packages/saved-objects/import-export-server-mocks/src/saved_objects_importer.mock.ts",
+        "lineNumber": 22,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -73,16 +73,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-saved-objects-server",
-                "scope": "server",
-                "docId": "kibKbnCoreSavedObjectsServerPluginApi",
-                "section": "def-server.ISavedObjectsImporter",
-                "text": "ISavedObjectsImporter"
-              },
+              "ISavedObjectsImporter",
               ">"
             ],
-            "path": "packages/core/saved-objects/core-saved-objects-import-export-server-mocks/src/saved_objects_importer.mock.ts",
+            "path": "src/core/packages/saved-objects/import-export-server-mocks/src/saved_objects_importer.mock.ts",
+            "lineNumber": 23,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],

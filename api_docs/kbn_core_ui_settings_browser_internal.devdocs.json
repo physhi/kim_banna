@@ -10,17 +10,13 @@
         "label": "UiSettingsClient",
         "description": [],
         "signature": [
-          {
-            "pluginId": "@kbn/core-ui-settings-browser-internal",
-            "scope": "public",
-            "docId": "kibKbnCoreUiSettingsBrowserInternalPluginApi",
-            "section": "def-public.UiSettingsClient",
-            "text": "UiSettingsClient"
-          },
+          "UiSettingsClient",
           " extends ",
           "UiSettingsClientCommon"
         ],
-        "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_client.ts",
+        "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_client.ts",
+        "lineNumber": 14,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -34,7 +30,9 @@
             "signature": [
               "any"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_client.ts",
+            "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_client.ts",
+            "lineNumber": 15,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -48,7 +46,9 @@
                 "signature": [
                   "UiSettingsClientParams"
                 ],
-                "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_client.ts",
+                "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_client.ts",
+                "lineNumber": 15,
+                "columnNumber": 15,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -66,7 +66,9 @@
             "signature": [
               "(key: string, newVal: any) => Promise<boolean>"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_client.ts",
+            "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_client.ts",
+            "lineNumber": 19,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -80,7 +82,9 @@
                 "signature": [
                   "string"
                 ],
-                "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_client.ts",
+                "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_client.ts",
+                "lineNumber": 19,
+                "columnNumber": 16,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -95,7 +99,9 @@
                 "signature": [
                   "any"
                 ],
-                "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_client.ts",
+                "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_client.ts",
+                "lineNumber": 19,
+                "columnNumber": 29,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -116,7 +122,9 @@
         ],
         "label": "UiSettingsService",
         "description": [],
-        "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_service.ts",
+        "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_service.ts",
+        "lineNumber": 24,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -131,15 +139,11 @@
               "({ http, injectedMetadata }: ",
               "UiSettingsServiceDeps",
               ") => ",
-              {
-                "pluginId": "@kbn/core-ui-settings-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreUiSettingsBrowserPluginApi",
-                "section": "def-public.IUiSettingsClient",
-                "text": "IUiSettingsClient"
-              }
+              "IUiSettingsClient"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_service.ts",
+            "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_service.ts",
+            "lineNumber": 33,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -153,7 +157,9 @@
                 "signature": [
                   "UiSettingsServiceDeps"
                 ],
-                "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_service.ts",
+                "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_service.ts",
+                "lineNumber": 33,
+                "columnNumber": 16,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -170,15 +176,11 @@
             "description": [],
             "signature": [
               "() => ",
-              {
-                "pluginId": "@kbn/core-ui-settings-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreUiSettingsBrowserPluginApi",
-                "section": "def-public.IUiSettingsClient",
-                "text": "IUiSettingsClient"
-              }
+              "IUiSettingsClient"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_service.ts",
+            "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_service.ts",
+            "lineNumber": 50,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -194,7 +196,9 @@
             "signature": [
               "() => void"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-internal/src/ui_settings_service.ts",
+            "path": "src/core/packages/ui-settings/browser-internal/src/ui_settings_service.ts",
+            "lineNumber": 54,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],

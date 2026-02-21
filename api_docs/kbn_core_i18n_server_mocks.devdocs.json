@@ -22,7 +22,9 @@
         "tags": [],
         "label": "i18nServiceMock",
         "description": [],
-        "path": "packages/core/i18n/core-i18n-server-mocks/src/i18n_service.mock.ts",
+        "path": "src/core/packages/i18n/server-mocks/src/i18n_service.mock.ts",
+        "lineNumber": 46,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -36,7 +38,9 @@
             "signature": [
               "() => jest.Mocked<I18nServiceContract>"
             ],
-            "path": "packages/core/i18n/core-i18n-server-mocks/src/i18n_service.mock.ts",
+            "path": "src/core/packages/i18n/server-mocks/src/i18n_service.mock.ts",
+            "lineNumber": 47,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -51,16 +55,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-i18n-server",
-                "scope": "server",
-                "docId": "kibKbnCoreI18nServerPluginApi",
-                "section": "def-server.I18nServiceSetup",
-                "text": "I18nServiceSetup"
-              },
+              "I18nServiceSetup",
               ">"
             ],
-            "path": "packages/core/i18n/core-i18n-server-mocks/src/i18n_service.mock.ts",
+            "path": "src/core/packages/i18n/server-mocks/src/i18n_service.mock.ts",
+            "lineNumber": 48,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -75,16 +75,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-i18n-server-internal",
-                "scope": "server",
-                "docId": "kibKbnCoreI18nServerInternalPluginApi",
-                "section": "def-server.InternalI18nServicePreboot",
-                "text": "InternalI18nServicePreboot"
-              },
+              "InternalI18nServicePreboot",
               ">"
             ],
-            "path": "packages/core/i18n/core-i18n-server-mocks/src/i18n_service.mock.ts",
+            "path": "src/core/packages/i18n/server-mocks/src/i18n_service.mock.ts",
+            "lineNumber": 49,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],

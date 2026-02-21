@@ -10,18 +10,10 @@
   },
   "server": {
     "classes": [],
-    "functions": [],
-    "interfaces": [],
-    "enums": [],
-    "misc": [],
-    "objects": []
-  },
-  "common": {
-    "classes": [],
     "functions": [
       {
         "parentPluginId": "@kbn/docs-utils",
-        "id": "def-common.findPlugins",
+        "id": "def-server.findPlugins",
         "type": "Function",
         "tags": [],
         "label": "findPlugins",
@@ -32,12 +24,14 @@
           "[]"
         ],
         "path": "packages/kbn-docs-utils/src/find_plugins.ts",
+        "lineNumber": 72,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
           {
             "parentPluginId": "@kbn/docs-utils",
-            "id": "def-common.findPlugins.$1",
+            "id": "def-server.findPlugins.$1",
             "type": "Array",
             "tags": [],
             "label": "pluginOrPackageFilter",
@@ -46,6 +40,8 @@
               "string[] | undefined"
             ],
             "path": "packages/kbn-docs-utils/src/find_plugins.ts",
+            "lineNumber": 72,
+            "columnNumber": 29,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": false
@@ -56,7 +52,7 @@
       },
       {
         "parentPluginId": "@kbn/docs-utils",
-        "id": "def-common.findTeamPlugins",
+        "id": "def-server.findTeamPlugins",
         "type": "Function",
         "tags": [],
         "label": "findTeamPlugins",
@@ -67,12 +63,14 @@
           "[]"
         ],
         "path": "packages/kbn-docs-utils/src/find_plugins.ts",
+        "lineNumber": 98,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
           {
             "parentPluginId": "@kbn/docs-utils",
-            "id": "def-common.findTeamPlugins.$1",
+            "id": "def-server.findTeamPlugins.$1",
             "type": "string",
             "tags": [],
             "label": "team",
@@ -81,6 +79,8 @@
               "string"
             ],
             "path": "packages/kbn-docs-utils/src/find_plugins.ts",
+            "lineNumber": 98,
+            "columnNumber": 33,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -91,7 +91,7 @@
       },
       {
         "parentPluginId": "@kbn/docs-utils",
-        "id": "def-common.runBuildApiDocsCli",
+        "id": "def-server.runBuildApiDocsCli",
         "type": "Function",
         "tags": [],
         "label": "runBuildApiDocsCli",
@@ -100,6 +100,8 @@
           "() => void"
         ],
         "path": "packages/kbn-docs-utils/src/build_api_docs_cli.ts",
+        "lineNumber": 41,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [],
@@ -107,6 +109,14 @@
         "initialIsOpen": false
       }
     ],
+    "interfaces": [],
+    "enums": [],
+    "misc": [],
+    "objects": []
+  },
+  "common": {
+    "classes": [],
+    "functions": [],
     "interfaces": [],
     "enums": [],
     "misc": [],

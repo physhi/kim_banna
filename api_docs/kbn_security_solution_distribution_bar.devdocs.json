@@ -23,7 +23,9 @@
           },
           ">"
         ],
-        "path": "x-pack/packages/security-solution/distribution_bar/src/distribution_bar.tsx",
+        "path": "x-pack/solutions/security/packages/distribution-bar/src/distribution_bar.tsx",
+        "lineNumber": 162,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "returnComment": [],
@@ -31,14 +33,16 @@
           {
             "parentPluginId": "@kbn/security-solution-distribution-bar",
             "id": "def-public.DistributionBar.$1",
-            "type": "CompoundType",
+            "type": "Uncategorized",
             "tags": [],
             "label": "props",
             "description": [],
             "signature": [
-              "P & { children?: React.ReactNode; }"
+              "P"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 10,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -52,7 +56,9 @@
             "signature": [
               "any"
             ],
-            "path": "node_modules/@types/react/index.d.ts",
+            "path": "node_modules/@types/react/ts5.0/index.d.ts",
+            "lineNumber": 1109,
+            "columnNumber": 20,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -70,7 +76,9 @@
         "description": [
           "DistributionBar component props"
         ],
-        "path": "x-pack/packages/security-solution/distribution_bar/src/distribution_bar.tsx",
+        "path": "x-pack/solutions/security/packages/distribution-bar/src/distribution_bar.tsx",
+        "lineNumber": 12,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -84,9 +92,29 @@
               "distribution data points"
             ],
             "signature": [
-              "{ key: string; count: number; color: string; label?: React.ReactNode; }[]"
+              "{ key: string; count: number; color: string; label?: React.ReactNode; isCurrentFilter?: boolean | undefined; filter?: (() => void) | undefined; reset?: ((event: React.MouseEvent<SVGElement, MouseEvent>) => void) | undefined; }[]"
             ],
-            "path": "x-pack/packages/security-solution/distribution_bar/src/distribution_bar.tsx",
+            "path": "x-pack/solutions/security/packages/distribution-bar/src/distribution_bar.tsx",
+            "lineNumber": 14,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "@kbn/security-solution-distribution-bar",
+            "id": "def-public.DistributionBarProps.hideLastTooltip",
+            "type": "CompoundType",
+            "tags": [],
+            "label": "hideLastTooltip",
+            "description": [
+              "hide the label above the bar at first render"
+            ],
+            "signature": [
+              "boolean | undefined"
+            ],
+            "path": "x-pack/solutions/security/packages/distribution-bar/src/distribution_bar.tsx",
+            "lineNumber": 24,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -102,7 +130,9 @@
             "signature": [
               "string | undefined"
             ],
-            "path": "x-pack/packages/security-solution/distribution_bar/src/distribution_bar.tsx",
+            "path": "x-pack/solutions/security/packages/distribution-bar/src/distribution_bar.tsx",
+            "lineNumber": 26,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           }

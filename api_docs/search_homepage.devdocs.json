@@ -11,7 +11,9 @@
         "tags": [],
         "label": "SearchHomepageAppInfo",
         "description": [],
-        "path": "x-pack/plugins/search_homepage/public/types.ts",
+        "path": "x-pack/solutions/search/plugins/search_homepage/public/types.ts",
+        "lineNumber": 21,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -22,7 +24,9 @@
             "tags": [],
             "label": "appRoute",
             "description": [],
-            "path": "x-pack/plugins/search_homepage/public/types.ts",
+            "path": "x-pack/solutions/search/plugins/search_homepage/public/types.ts",
+            "lineNumber": 22,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -33,7 +37,9 @@
             "tags": [],
             "label": "id",
             "description": [],
-            "path": "x-pack/plugins/search_homepage/public/types.ts",
+            "path": "x-pack/solutions/search/plugins/search_homepage/public/types.ts",
+            "lineNumber": 23,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -44,7 +50,9 @@
             "tags": [],
             "label": "title",
             "description": [],
-            "path": "x-pack/plugins/search_homepage/public/types.ts",
+            "path": "x-pack/solutions/search/plugins/search_homepage/public/types.ts",
+            "lineNumber": 24,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -62,7 +70,9 @@
       "tags": [],
       "label": "SearchHomepagePluginSetup",
       "description": [],
-      "path": "x-pack/plugins/search_homepage/public/types.ts",
+      "path": "x-pack/solutions/search/plugins/search_homepage/public/types.ts",
+      "lineNumber": 27,
+      "columnNumber": 1,
       "deprecated": false,
       "trackAdoption": false,
       "children": [
@@ -84,29 +94,11 @@
               "text": "SearchHomepageAppInfo"
             }
           ],
-          "path": "x-pack/plugins/search_homepage/public/types.ts",
+          "path": "x-pack/solutions/search/plugins/search_homepage/public/types.ts",
+          "lineNumber": 28,
+          "columnNumber": 3,
           "deprecated": false,
           "trackAdoption": false
-        },
-        {
-          "parentPluginId": "searchHomepage",
-          "id": "def-public.SearchHomepagePluginSetup.isHomepageFeatureEnabled",
-          "type": "Function",
-          "tags": [],
-          "label": "isHomepageFeatureEnabled",
-          "description": [
-            "\nChecks if the Search Homepage feature flag is currently enabled."
-          ],
-          "signature": [
-            "() => boolean"
-          ],
-          "path": "x-pack/plugins/search_homepage/public/types.ts",
-          "deprecated": false,
-          "trackAdoption": false,
-          "children": [],
-          "returnComment": [
-            "true if Search Homepage feature is enabled"
-          ]
         }
       ],
       "lifecycle": "setup",
@@ -119,7 +111,9 @@
       "tags": [],
       "label": "SearchHomepagePluginStart",
       "description": [],
-      "path": "x-pack/plugins/search_homepage/public/types.ts",
+      "path": "x-pack/solutions/search/plugins/search_homepage/public/types.ts",
+      "lineNumber": 36,
+      "columnNumber": 1,
       "deprecated": false,
       "trackAdoption": false,
       "children": [
@@ -141,29 +135,11 @@
               "text": "SearchHomepageAppInfo"
             }
           ],
-          "path": "x-pack/plugins/search_homepage/public/types.ts",
+          "path": "x-pack/solutions/search/plugins/search_homepage/public/types.ts",
+          "lineNumber": 37,
+          "columnNumber": 3,
           "deprecated": false,
           "trackAdoption": false
-        },
-        {
-          "parentPluginId": "searchHomepage",
-          "id": "def-public.SearchHomepagePluginStart.isHomepageFeatureEnabled",
-          "type": "Function",
-          "tags": [],
-          "label": "isHomepageFeatureEnabled",
-          "description": [
-            "\nChecks if the Search Homepage feature flag is currently enabled."
-          ],
-          "signature": [
-            "() => boolean"
-          ],
-          "path": "x-pack/plugins/search_homepage/public/types.ts",
-          "deprecated": false,
-          "trackAdoption": false,
-          "children": [],
-          "returnComment": [
-            "true if Search Homepage feature is enabled"
-          ]
         },
         {
           "parentPluginId": "searchHomepage",
@@ -175,9 +151,11 @@
             "\nSearchHomepage shared component, used to render the search homepage in\nthe Stack search plugin"
           ],
           "signature": [
-            "React.FunctionComponent<{ children?: React.ReactNode; }>"
+            "React.FunctionComponent<{}>"
           ],
-          "path": "x-pack/plugins/search_homepage/public/types.ts",
+          "path": "x-pack/solutions/search/plugins/search_homepage/public/types.ts",
+          "lineNumber": 43,
+          "columnNumber": 3,
           "deprecated": false,
           "trackAdoption": false,
           "returnComment": [],
@@ -185,14 +163,16 @@
             {
               "parentPluginId": "searchHomepage",
               "id": "def-public.SearchHomepagePluginStart.SearchHomepage.$1",
-              "type": "CompoundType",
+              "type": "Uncategorized",
               "tags": [],
               "label": "props",
               "description": [],
               "signature": [
-                "P & { children?: React.ReactNode; }"
+                "P"
               ],
-              "path": "node_modules/@types/react/index.d.ts",
+              "path": "node_modules/@types/react/ts5.0/index.d.ts",
+              "lineNumber": 1109,
+              "columnNumber": 10,
               "deprecated": false,
               "trackAdoption": false
             },
@@ -206,7 +186,9 @@
               "signature": [
                 "any"
               ],
-              "path": "node_modules/@types/react/index.d.ts",
+              "path": "node_modules/@types/react/ts5.0/index.d.ts",
+              "lineNumber": 1109,
+              "columnNumber": 20,
               "deprecated": false,
               "trackAdoption": false
             }
@@ -231,7 +213,9 @@
       "tags": [],
       "label": "SearchHomepagePluginSetup",
       "description": [],
-      "path": "x-pack/plugins/search_homepage/server/types.ts",
+      "path": "x-pack/solutions/search/plugins/search_homepage/server/types.ts",
+      "lineNumber": 9,
+      "columnNumber": 1,
       "deprecated": false,
       "trackAdoption": false,
       "children": [],
@@ -245,7 +229,9 @@
       "tags": [],
       "label": "SearchHomepagePluginStart",
       "description": [],
-      "path": "x-pack/plugins/search_homepage/server/types.ts",
+      "path": "x-pack/solutions/search/plugins/search_homepage/server/types.ts",
+      "lineNumber": 11,
+      "columnNumber": 1,
       "deprecated": false,
       "trackAdoption": false,
       "children": [],
@@ -271,7 +257,9 @@
         "signature": [
           "\"searchHomepage:homepageEnabled\""
         ],
-        "path": "x-pack/plugins/search_homepage/common/index.ts",
+        "path": "x-pack/solutions/search/plugins/search_homepage/common/index.ts",
+        "lineNumber": 14,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -286,7 +274,9 @@
         "signature": [
           "\"searchHomepage\""
         ],
-        "path": "x-pack/plugins/search_homepage/common/index.ts",
+        "path": "x-pack/solutions/search/plugins/search_homepage/common/index.ts",
+        "lineNumber": 8,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -301,7 +291,45 @@
         "signature": [
           "\"searchHomepage\""
         ],
-        "path": "x-pack/plugins/search_homepage/common/index.ts",
+        "path": "x-pack/solutions/search/plugins/search_homepage/common/index.ts",
+        "lineNumber": 9,
+        "columnNumber": 14,
+        "deprecated": false,
+        "trackAdoption": false,
+        "initialIsOpen": false
+      },
+      {
+        "parentPluginId": "searchHomepage",
+        "id": "def-common.SEARCH_HOMEPAGE_V2_UI_FLAG",
+        "type": "string",
+        "tags": [],
+        "label": "SEARCH_HOMEPAGE_V2_UI_FLAG",
+        "description": [],
+        "signature": [
+          "\"searchHomepage:searchHomepageV2Enabled\""
+        ],
+        "path": "x-pack/solutions/search/plugins/search_homepage/common/index.ts",
+        "lineNumber": 15,
+        "columnNumber": 14,
+        "deprecated": false,
+        "trackAdoption": false,
+        "initialIsOpen": false
+      },
+      {
+        "parentPluginId": "searchHomepage",
+        "id": "def-common.WORKFLOWS_UI_SETTING_ENABLED_ID",
+        "type": "string",
+        "tags": [],
+        "label": "WORKFLOWS_UI_SETTING_ENABLED_ID",
+        "description": [
+          "\nUI Setting id for Workflows, to show/hide related elements"
+        ],
+        "signature": [
+          "\"workflows:ui:enabled\""
+        ],
+        "path": "x-pack/solutions/search/plugins/search_homepage/common/index.ts",
+        "lineNumber": 21,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false

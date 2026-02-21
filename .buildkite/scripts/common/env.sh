@@ -23,12 +23,14 @@ if [[ -d /opt/local-ssd/buildkite ]]; then
   mkdir -p "$TMPDIR"
 fi
 
-KIBANA_PKG_BRANCH="$(jq -r .branch "$KIBANA_DIR/package.json")"
-export KIBANA_PKG_BRANCH
-export KIBANA_BASE_BRANCH="$KIBANA_PKG_BRANCH"
+if command -v jq >/dev/null 2>&1; then
+  KIBANA_PKG_BRANCH="$(jq -r .branch "$KIBANA_DIR/package.json")"
+  export KIBANA_PKG_BRANCH
+  export KIBANA_BASE_BRANCH="$KIBANA_PKG_BRANCH"
 
-KIBANA_PKG_VERSION="$(jq -r .version "$KIBANA_DIR/package.json")"
-export KIBANA_PKG_VERSION
+  KIBANA_PKG_VERSION="$(jq -r .version "$KIBANA_DIR/package.json")"
+  export KIBANA_PKG_VERSION
+fi
 
 # Detects and exports the final target branch when using a merge queue
 if [[ "${BUILDKITE_BRANCH:-}" == "gh-readonly-queue"* ]]; then
@@ -75,10 +77,20 @@ export ELASTIC_APM_KIBANA_FRONTEND_ACTIVE=false
 if is_pr; then
   if is_pr_with_label "ci:collect-apm"; then
     export ELASTIC_APM_ACTIVE=true
+    export ELASTIC_APM_TRANSACTION_SAMPLE_RATE=1.0
     export ELASTIC_APM_CONTEXT_PROPAGATION_ONLY=false
+    # set higher timeouts as # of requests can temporarily overwhelm APM Server
+    export ELASTIC_APM_API_REQUEST_TIME=10s
+    export ELASTIC_APM_SERVER_TIMEOUT=60s
+    export ELASTIC_APM_KIBANA_FRONTEND_ACTIVE=true
   else
     export ELASTIC_APM_ACTIVE=true
     export ELASTIC_APM_CONTEXT_PROPAGATION_ONLY=true
+  fi
+
+  # value for security genai prompts evals
+  if is_pr_with_label "ci:security-genai-run-evals-local-prompts"; then
+    export IS_SECURITY_AI_PROMPT_TEST=true
   fi
 
   # These can be removed once we're not supporting Jenkins and Buildkite at the same time
@@ -130,9 +142,9 @@ export TEST_GROUP_TYPE_FUNCTIONAL="Functional Tests"
 # tells the gh command what our default repo is
 export GH_REPO=github.com/elastic/kibana
 
-FTR_ENABLE_FIPS_AGENT=false
-if [[ "${KBN_ENABLE_FIPS:-}" == "true" ]] || is_pr_with_label "ci:enable-fips-agent"; then
-  FTR_ENABLE_FIPS_AGENT=true
+if [[ "${TEST_ENABLE_FIPS_VERSION:-}" == "140-2" ]] || [[ "${TEST_ENABLE_FIPS_VERSION:-}" == "140-3" ]] || is_pr_with_label "ci:enable-fips-140-2-agent" || is_pr_with_label "ci:enable-fips-140-3-agent"; then
+  ES_SECURITY_ENABLED=true
+  export ES_SECURITY_ENABLED
   # used by FIPS agents to link FIPS OpenSSL modules
   export OPENSSL_MODULES=$HOME/openssl/lib/ossl-modules
 
@@ -142,8 +154,7 @@ if [[ "${KBN_ENABLE_FIPS:-}" == "true" ]] || is_pr_with_label "ci:enable-fips-ag
   fi
 
   if [[ -f "$KIBANA_DIR/config/kibana.yml" ]]; then
-    echo -e '\nxpack.security.experimental.fipsMode.enabled: true' >>"$KIBANA_DIR/config/kibana.yml"
+    echo -e '\nxpack.security.fipsMode.enabled: true' >>"$KIBANA_DIR/config/kibana.yml"
   fi
 fi
 
-export FTR_ENABLE_FIPS_AGENT

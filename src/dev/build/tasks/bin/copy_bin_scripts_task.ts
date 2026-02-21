@@ -1,16 +1,18 @@
 /*
  * Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
- * or more contributor license agreements. Licensed under the Elastic License
- * 2.0 and the Server Side Public License, v 1; you may not use this file except
- * in compliance with, at your election, the Elastic License 2.0 or the Server
- * Side Public License, v 1.
+ * or more contributor license agreements. Licensed under the "Elastic License
+ * 2.0", the "GNU Affero General Public License v3.0 only", and the "Server Side
+ * Public License v 1"; you may not use this file except in compliance with, at
+ * your election, the "Elastic License 2.0", the "GNU Affero General Public
+ * License v3.0 only", or the "Server Side Public License, v 1".
  */
 
 import Mustache from 'mustache';
 import { join } from 'path';
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import globby from 'globby';
-import { copyAll, Task } from '../../lib';
+import type { Task } from '../../lib';
+import { copyAll } from '../../lib';
 
 export const CopyBinScripts: Task = {
   description: 'Copying bin scripts into platform-specific build directory',

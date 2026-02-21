@@ -13,7 +13,9 @@
         "description": [
           "\nKibana execution context.\nUsed to provide execution context to Elasticsearch, reporting, performance monitoring, etc."
         ],
-        "path": "packages/core/execution-context/core-execution-context-browser/src/types.ts",
+        "path": "src/core/packages/execution-context/browser/src/types.ts",
+        "lineNumber": 20,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -29,16 +31,12 @@
             "signature": [
               "Observable",
               "<",
-              {
-                "pluginId": "@kbn/core-execution-context-common",
-                "scope": "common",
-                "docId": "kibKbnCoreExecutionContextCommonPluginApi",
-                "section": "def-common.KibanaExecutionContext",
-                "text": "KibanaExecutionContext"
-              },
+              "KibanaExecutionContext",
               ">"
             ],
-            "path": "packages/core/execution-context/core-execution-context-browser/src/types.ts",
+            "path": "src/core/packages/execution-context/browser/src/types.ts",
+            "lineNumber": 26,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -53,16 +51,12 @@
             ],
             "signature": [
               "(c$: ",
-              {
-                "pluginId": "@kbn/core-execution-context-common",
-                "scope": "common",
-                "docId": "kibKbnCoreExecutionContextCommonPluginApi",
-                "section": "def-common.KibanaExecutionContext",
-                "text": "KibanaExecutionContext"
-              },
+              "KibanaExecutionContext",
               ") => void"
             ],
-            "path": "packages/core/execution-context/core-execution-context-browser/src/types.ts",
+            "path": "src/core/packages/execution-context/browser/src/types.ts",
+            "lineNumber": 30,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -74,15 +68,11 @@
                 "label": "c$",
                 "description": [],
                 "signature": [
-                  {
-                    "pluginId": "@kbn/core-execution-context-common",
-                    "scope": "common",
-                    "docId": "kibKbnCoreExecutionContextCommonPluginApi",
-                    "section": "def-common.KibanaExecutionContext",
-                    "text": "KibanaExecutionContext"
-                  }
+                  "KibanaExecutionContext"
                 ],
-                "path": "packages/core/execution-context/core-execution-context-browser/src/types.ts",
+                "path": "src/core/packages/execution-context/browser/src/types.ts",
+                "lineNumber": 33,
+                "columnNumber": 7,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -101,15 +91,11 @@
             ],
             "signature": [
               "() => ",
-              {
-                "pluginId": "@kbn/core-execution-context-common",
-                "scope": "common",
-                "docId": "kibKbnCoreExecutionContextCommonPluginApi",
-                "section": "def-common.KibanaExecutionContext",
-                "text": "KibanaExecutionContext"
-              }
+              "KibanaExecutionContext"
             ],
-            "path": "packages/core/execution-context/core-execution-context-browser/src/types.ts",
+            "path": "src/core/packages/execution-context/browser/src/types.ts",
+            "lineNumber": 34,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -127,7 +113,9 @@
             "signature": [
               "() => void"
             ],
-            "path": "packages/core/execution-context/core-execution-context-browser/src/types.ts",
+            "path": "src/core/packages/execution-context/browser/src/types.ts",
+            "lineNumber": 38,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -146,7 +134,9 @@
               "() => ",
               "Labels"
             ],
-            "path": "packages/core/execution-context/core-execution-context-browser/src/types.ts",
+            "path": "src/core/packages/execution-context/browser/src/types.ts",
+            "lineNumber": 42,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -163,23 +153,13 @@
             ],
             "signature": [
               "(context?: ",
-              {
-                "pluginId": "@kbn/core-execution-context-common",
-                "scope": "common",
-                "docId": "kibKbnCoreExecutionContextCommonPluginApi",
-                "section": "def-common.KibanaExecutionContext",
-                "text": "KibanaExecutionContext"
-              },
+              "KibanaExecutionContext",
               " | undefined) => ",
-              {
-                "pluginId": "@kbn/core-execution-context-common",
-                "scope": "common",
-                "docId": "kibKbnCoreExecutionContextCommonPluginApi",
-                "section": "def-common.KibanaExecutionContext",
-                "text": "KibanaExecutionContext"
-              }
+              "KibanaExecutionContext"
             ],
-            "path": "packages/core/execution-context/core-execution-context-browser/src/types.ts",
+            "path": "src/core/packages/execution-context/browser/src/types.ts",
+            "lineNumber": 46,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -191,16 +171,12 @@
                 "label": "context",
                 "description": [],
                 "signature": [
-                  {
-                    "pluginId": "@kbn/core-execution-context-common",
-                    "scope": "common",
-                    "docId": "kibKbnCoreExecutionContextCommonPluginApi",
-                    "section": "def-common.KibanaExecutionContext",
-                    "text": "KibanaExecutionContext"
-                  },
+                  "KibanaExecutionContext",
                   " | undefined"
                 ],
-                "path": "packages/core/execution-context/core-execution-context-browser/src/types.ts",
+                "path": "src/core/packages/execution-context/browser/src/types.ts",
+                "lineNumber": 49,
+                "columnNumber": 21,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": false
@@ -224,15 +200,11 @@
           "\nSee {@link ExecutionContextSetup}."
         ],
         "signature": [
-          {
-            "pluginId": "@kbn/core-execution-context-browser",
-            "scope": "public",
-            "docId": "kibKbnCoreExecutionContextBrowserPluginApi",
-            "section": "def-public.ExecutionContextSetup",
-            "text": "ExecutionContextSetup"
-          }
+          "ExecutionContextSetup"
         ],
-        "path": "packages/core/execution-context/core-execution-context-browser/src/types.ts",
+        "path": "src/core/packages/execution-context/browser/src/types.ts",
+        "lineNumber": 52,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false

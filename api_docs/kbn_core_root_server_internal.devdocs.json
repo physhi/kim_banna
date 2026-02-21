@@ -19,7 +19,9 @@
         "description": [
           "\nTop-level entry point to kick off the app and start the Kibana server."
         ],
-        "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+        "path": "src/core/packages/root/server-internal/src/root/index.ts",
+        "lineNumber": 23,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -39,7 +41,9 @@
                 "text": "LoggerFactory"
               }
             ],
-            "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+            "path": "src/core/packages/root/server-internal/src/root/index.ts",
+            "lineNumber": 27,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -53,7 +57,9 @@
             "signature": [
               "any"
             ],
-            "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+            "path": "src/core/packages/root/server-internal/src/root/index.ts",
+            "lineNumber": 35,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -67,13 +73,15 @@
                 "signature": [
                   {
                     "pluginId": "@kbn/config",
-                    "scope": "common",
+                    "scope": "server",
                     "docId": "kibKbnConfigPluginApi",
-                    "section": "def-common.RawConfigurationProvider",
+                    "section": "def-server.RawConfigurationProvider",
                     "text": "RawConfigurationProvider"
                   }
                 ],
-                "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+                "path": "src/core/packages/root/server-internal/src/root/index.ts",
+                "lineNumber": 36,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -88,13 +96,15 @@
                 "signature": [
                   {
                     "pluginId": "@kbn/config",
-                    "scope": "common",
+                    "scope": "server",
                     "docId": "kibKbnConfigPluginApi",
-                    "section": "def-common.Env",
+                    "section": "def-server.Env",
                     "text": "Env"
                   }
                 ],
-                "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+                "path": "src/core/packages/root/server-internal/src/root/index.ts",
+                "lineNumber": 37,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -109,7 +119,9 @@
                 "signature": [
                   "((reason?: string | Error | undefined) => void) | undefined"
                 ],
-                "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+                "path": "src/core/packages/root/server-internal/src/root/index.ts",
+                "lineNumber": 38,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": false
@@ -129,7 +141,9 @@
               "InternalCorePreboot",
               " | undefined>"
             ],
-            "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+            "path": "src/core/packages/root/server-internal/src/root/index.ts",
+            "lineNumber": 46,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -147,7 +161,9 @@
               "InternalCoreSetup",
               ">"
             ],
-            "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+            "path": "src/core/packages/root/server-internal/src/root/index.ts",
+            "lineNumber": 61,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -165,7 +181,9 @@
               "InternalCoreStart",
               ">"
             ],
-            "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+            "path": "src/core/packages/root/server-internal/src/root/index.ts",
+            "lineNumber": 71,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -181,7 +199,9 @@
             "signature": [
               "(reason?: any) => Promise<void>"
             ],
-            "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+            "path": "src/core/packages/root/server-internal/src/root/index.ts",
+            "lineNumber": 81,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -195,7 +215,9 @@
                 "signature": [
                   "any"
                 ],
-                "path": "packages/core/root/core-root-server-internal/src/root/index.ts",
+                "path": "src/core/packages/root/server-internal/src/root/index.ts",
+                "lineNumber": 81,
+                "columnNumber": 25,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -220,7 +242,9 @@
           "ConfigService",
           ") => void"
         ],
-        "path": "packages/core/root/core-root-server-internal/src/register_service_config.ts",
+        "path": "src/core/packages/root/server-internal/src/register_service_config.ts",
+        "lineNumber": 46,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -234,7 +258,9 @@
             "signature": [
               "ConfigService"
             ],
-            "path": "packages/core/root/core-root-server-internal/src/register_service_config.ts",
+            "path": "src/core/packages/root/server-internal/src/register_service_config.ts",
+            "lineNumber": 46,
+            "columnNumber": 39,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true

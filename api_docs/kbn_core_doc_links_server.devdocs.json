@@ -19,7 +19,9 @@
         "tags": [],
         "label": "DocLinksServiceSetup",
         "description": [],
-        "path": "packages/core/doc-links/core-doc-links-server/src/types.ts",
+        "path": "src/core/packages/doc-links/server/src/types.ts",
+        "lineNumber": 12,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -32,7 +34,9 @@
             "description": [
               "The branch/version the docLinks are pointing to"
             ],
-            "path": "packages/core/doc-links/core-doc-links-server/src/types.ts",
+            "path": "src/core/packages/doc-links/server/src/types.ts",
+            "lineNumber": 14,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -45,7 +49,9 @@
             "description": [
               "The base url for the elastic website"
             ],
-            "path": "packages/core/doc-links/core-doc-links-server/src/types.ts",
+            "path": "src/core/packages/doc-links/server/src/types.ts",
+            "lineNumber": 16,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -67,7 +73,9 @@
                 "text": "DocLinks"
               }
             ],
-            "path": "packages/core/doc-links/core-doc-links-server/src/types.ts",
+            "path": "src/core/packages/doc-links/server/src/types.ts",
+            "lineNumber": 18,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -79,21 +87,34 @@
     "misc": [
       {
         "parentPluginId": "@kbn/core-doc-links-server",
+        "id": "def-server.DocLinksServicePreboot",
+        "type": "Type",
+        "tags": [],
+        "label": "DocLinksServicePreboot",
+        "description": [],
+        "signature": [
+          "DocLinksServiceSetup"
+        ],
+        "path": "src/core/packages/doc-links/server/src/types.ts",
+        "lineNumber": 25,
+        "columnNumber": 1,
+        "deprecated": false,
+        "trackAdoption": false,
+        "initialIsOpen": false
+      },
+      {
+        "parentPluginId": "@kbn/core-doc-links-server",
         "id": "def-server.DocLinksServiceStart",
         "type": "Type",
         "tags": [],
         "label": "DocLinksServiceStart",
         "description": [],
         "signature": [
-          {
-            "pluginId": "@kbn/core-doc-links-server",
-            "scope": "server",
-            "docId": "kibKbnCoreDocLinksServerPluginApi",
-            "section": "def-server.DocLinksServiceSetup",
-            "text": "DocLinksServiceSetup"
-          }
+          "DocLinksServiceSetup"
         ],
-        "path": "packages/core/doc-links/core-doc-links-server/src/types.ts",
+        "path": "src/core/packages/doc-links/server/src/types.ts",
+        "lineNumber": 22,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false

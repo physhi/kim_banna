@@ -14,7 +14,9 @@
         "tags": [],
         "label": "customBrandingServiceMock",
         "description": [],
-        "path": "packages/core/custom-branding/core-custom-branding-browser-mocks/custom_branding_service.mock.ts",
+        "path": "src/core/packages/custom-branding/browser-mocks/custom_branding_service.mock.ts",
+        "lineNumber": 44,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -28,7 +30,9 @@
             "signature": [
               "() => any"
             ],
-            "path": "packages/core/custom-branding/core-custom-branding-browser-mocks/custom_branding_service.mock.ts",
+            "path": "src/core/packages/custom-branding/browser-mocks/custom_branding_service.mock.ts",
+            "lineNumber": 45,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -45,18 +49,14 @@
               "() => { customBranding$: ",
               "Observable",
               "<",
-              {
-                "pluginId": "@kbn/core-custom-branding-common",
-                "scope": "common",
-                "docId": "kibKbnCoreCustomBrandingCommonPluginApi",
-                "section": "def-common.CustomBranding",
-                "text": "CustomBranding"
-              },
+              "CustomBranding",
               ">; hasCustomBranding$: ",
               "Observable",
               "<boolean>; }"
             ],
-            "path": "packages/core/custom-branding/core-custom-branding-browser-mocks/custom_branding_service.mock.ts",
+            "path": "src/core/packages/custom-branding/browser-mocks/custom_branding_service.mock.ts",
+            "lineNumber": 46,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -73,18 +73,14 @@
               "() => { customBranding$: ",
               "Observable",
               "<",
-              {
-                "pluginId": "@kbn/core-custom-branding-common",
-                "scope": "common",
-                "docId": "kibKbnCoreCustomBrandingCommonPluginApi",
-                "section": "def-common.CustomBranding",
-                "text": "CustomBranding"
-              },
+              "CustomBranding",
               ">; hasCustomBranding$: ",
               "Observable",
               "<boolean>; }"
             ],
-            "path": "packages/core/custom-branding/core-custom-branding-browser-mocks/custom_branding_service.mock.ts",
+            "path": "src/core/packages/custom-branding/browser-mocks/custom_branding_service.mock.ts",
+            "lineNumber": 47,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],

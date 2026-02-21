@@ -20,16 +20,12 @@
         "description": [],
         "signature": [
           "() => jest.Mocked<",
-          {
-            "pluginId": "@kbn/core-saved-objects-server",
-            "scope": "server",
-            "docId": "kibKbnCoreSavedObjectsServerPluginApi",
-            "section": "def-server.SavedObjectsMigrationLogger",
-            "text": "SavedObjectsMigrationLogger"
-          },
+          "SavedObjectsMigrationLogger",
           ">"
         ],
-        "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/migration.mocks.ts",
+        "path": "src/core/packages/saved-objects/migration-server-mocks/src/migration.mocks.ts",
+        "lineNumber": 16,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [],
@@ -46,7 +42,9 @@
         "signature": [
           "(fn: () => Promise<T>, options: { retryAttempts: number; retryDelayMs: number; }) => Promise<T>"
         ],
-        "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/helpers/retry_async.ts",
+        "path": "src/core/packages/saved-objects/migration-server-mocks/src/helpers/retry_async.ts",
+        "lineNumber": 14,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -60,7 +58,9 @@
             "signature": [
               "() => Promise<T>"
             ],
-            "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/helpers/retry_async.ts",
+            "path": "src/core/packages/saved-objects/migration-server-mocks/src/helpers/retry_async.ts",
+            "lineNumber": 15,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -72,7 +72,9 @@
             "tags": [],
             "label": "options",
             "description": [],
-            "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/helpers/retry_async.ts",
+            "path": "src/core/packages/saved-objects/migration-server-mocks/src/helpers/retry_async.ts",
+            "lineNumber": 16,
+            "columnNumber": 12,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -83,7 +85,9 @@
                 "tags": [],
                 "label": "retryAttempts",
                 "description": [],
-                "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/helpers/retry_async.ts",
+                "path": "src/core/packages/saved-objects/migration-server-mocks/src/helpers/retry_async.ts",
+                "lineNumber": 16,
+                "columnNumber": 14,
                 "deprecated": false,
                 "trackAdoption": false
               },
@@ -94,7 +98,9 @@
                 "tags": [],
                 "label": "retryDelayMs",
                 "description": [],
-                "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/helpers/retry_async.ts",
+                "path": "src/core/packages/saved-objects/migration-server-mocks/src/helpers/retry_async.ts",
+                "lineNumber": 16,
+                "columnNumber": 37,
                 "deprecated": false,
                 "trackAdoption": false
               }
@@ -116,7 +122,9 @@
         "tags": [],
         "label": "migrationMocks",
         "description": [],
-        "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/migration.mocks.ts",
+        "path": "src/core/packages/saved-objects/migration-server-mocks/src/migration.mocks.ts",
+        "lineNumber": 46,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -129,16 +137,12 @@
             "description": [],
             "signature": [
               "({ migrationVersion, convertToMultiNamespaceTypeVersion, isSingleNamespaceType, }?: { migrationVersion?: string | undefined; convertToMultiNamespaceTypeVersion?: string | undefined; isSingleNamespaceType?: boolean | undefined; }) => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-saved-objects-server",
-                "scope": "server",
-                "docId": "kibKbnCoreSavedObjectsServerPluginApi",
-                "section": "def-server.SavedObjectMigrationContext",
-                "text": "SavedObjectMigrationContext"
-              },
+              "SavedObjectMigrationContext",
               ">"
             ],
-            "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/migration.mocks.ts",
+            "path": "src/core/packages/saved-objects/migration-server-mocks/src/migration.mocks.ts",
+            "lineNumber": 47,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -153,7 +157,9 @@
                 "signature": [
                   "{ migrationVersion?: string | undefined; convertToMultiNamespaceTypeVersion?: string | undefined; isSingleNamespaceType?: boolean | undefined; }"
                 ],
-                "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/migration.mocks.ts",
+                "path": "src/core/packages/saved-objects/migration-server-mocks/src/migration.mocks.ts",
+                "lineNumber": 28,
+                "columnNumber": 28,
                 "deprecated": false,
                 "trackAdoption": false
               }
@@ -169,7 +175,9 @@
         "tags": [],
         "label": "mockKibanaMigrator",
         "description": [],
-        "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/kibana_migrator.mock.ts",
+        "path": "src/core/packages/saved-objects/migration-server-mocks/src/kibana_migrator.mock.ts",
+        "lineNumber": 69,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -182,18 +190,14 @@
             "description": [],
             "signature": [
               "({ types, }?: { types: ",
-              {
-                "pluginId": "@kbn/core-saved-objects-server",
-                "scope": "server",
-                "docId": "kibKbnCoreSavedObjectsServerPluginApi",
-                "section": "def-server.SavedObjectsType",
-                "text": "SavedObjectsType"
-              },
+              "SavedObjectsType",
               "<any>[]; }) => jest.Mocked<",
               "IKibanaMigrator",
               ">"
             ],
-            "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/kibana_migrator.mock.ts",
+            "path": "src/core/packages/saved-objects/migration-server-mocks/src/kibana_migrator.mock.ts",
+            "lineNumber": 70,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -207,16 +211,12 @@
                 "description": [],
                 "signature": [
                   "{ types: ",
-                  {
-                    "pluginId": "@kbn/core-saved-objects-server",
-                    "scope": "server",
-                    "docId": "kibKbnCoreSavedObjectsServerPluginApi",
-                    "section": "def-server.SavedObjectsType",
-                    "text": "SavedObjectsType"
-                  },
+                  "SavedObjectsType",
                   "<any>[]; }"
                 ],
-                "path": "packages/core/saved-objects/core-saved-objects-migration-server-mocks/src/kibana_migrator.mock.ts",
+                "path": "src/core/packages/saved-objects/migration-server-mocks/src/kibana_migrator.mock.ts",
+                "lineNumber": 38,
+                "columnNumber": 3,
                 "deprecated": false,
                 "trackAdoption": false
               }

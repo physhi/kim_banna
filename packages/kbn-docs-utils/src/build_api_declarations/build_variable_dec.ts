@@ -1,26 +1,28 @@
 /*
  * Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
- * or more contributor license agreements. Licensed under the Elastic License
- * 2.0 and the Server Side Public License, v 1; you may not use this file except
- * in compliance with, at your election, the Elastic License 2.0 or the Server
- * Side Public License, v 1.
+ * or more contributor license agreements. Licensed under the "Elastic License
+ * 2.0", the "GNU Affero General Public License v3.0 only", and the "Server Side
+ * Public License v 1"; you may not use this file except in compliance with, at
+ * your election, the "Elastic License 2.0", the "GNU Affero General Public
+ * License v3.0 only", or the "Server Side Public License, v 1".
  */
 
-import {
+import type {
   VariableDeclaration,
-  Node,
   PropertyAssignment,
   PropertyDeclaration,
   PropertySignature,
   ShorthandPropertyAssignment,
 } from 'ts-morph';
+import { Node } from 'ts-morph';
 import { isInternal } from '../utils';
-import { ApiDeclaration, TypeKind } from '../types';
+import type { ApiDeclaration } from '../types';
+import { TypeKind } from '../types';
 import { getArrowFunctionDec } from './build_arrow_fn_dec';
 import { buildApiDeclaration } from './build_api_declaration';
 import { buildBasicApiDeclaration } from './build_basic_api_declaration';
 import { buildCallSignatureDec } from './build_call_signature_dec';
-import { BuildApiDecOpts } from './types';
+import type { BuildApiDecOpts } from './types';
 import { getOptsForChild } from './utils';
 
 /**

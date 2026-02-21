@@ -18,16 +18,12 @@
         "label": "CriticalError",
         "description": [],
         "signature": [
-          {
-            "pluginId": "@kbn/core-base-server-internal",
-            "scope": "server",
-            "docId": "kibKbnCoreBaseServerInternalPluginApi",
-            "section": "def-server.CriticalError",
-            "text": "CriticalError"
-          },
+          "CriticalError",
           " extends Error"
         ],
-        "path": "packages/core/base/core-base-server-internal/src/errors.ts",
+        "path": "src/core/packages/base/server-internal/src/errors.ts",
+        "lineNumber": 10,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -41,7 +37,9 @@
             "signature": [
               "any"
             ],
-            "path": "packages/core/base/core-base-server-internal/src/errors.ts",
+            "path": "src/core/packages/base/server-internal/src/errors.ts",
+            "lineNumber": 11,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -55,7 +53,9 @@
                 "signature": [
                   "string"
                 ],
-                "path": "packages/core/base/core-base-server-internal/src/errors.ts",
+                "path": "src/core/packages/base/server-internal/src/errors.ts",
+                "lineNumber": 12,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -70,7 +70,9 @@
                 "signature": [
                   "string"
                 ],
-                "path": "packages/core/base/core-base-server-internal/src/errors.ts",
+                "path": "src/core/packages/base/server-internal/src/errors.ts",
+                "lineNumber": 13,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -85,7 +87,9 @@
                 "signature": [
                   "number"
                 ],
-                "path": "packages/core/base/core-base-server-internal/src/errors.ts",
+                "path": "src/core/packages/base/server-internal/src/errors.ts",
+                "lineNumber": 14,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -100,7 +104,9 @@
                 "signature": [
                   "Error | undefined"
                 ],
-                "path": "packages/core/base/core-base-server-internal/src/errors.ts",
+                "path": "src/core/packages/base/server-internal/src/errors.ts",
+                "lineNumber": 15,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": false
@@ -127,7 +133,9 @@
         "signature": [
           "RegExp"
         ],
-        "path": "packages/core/base/core-base-server-internal/src/regexp.ts",
+        "path": "src/core/packages/base/server-internal/src/regexp.ts",
+        "lineNumber": 10,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false

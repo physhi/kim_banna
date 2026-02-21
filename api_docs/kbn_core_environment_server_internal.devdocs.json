@@ -24,7 +24,9 @@
         "signature": [
           "{ readonly file?: string | undefined; readonly exclusive: boolean; }"
         ],
-        "path": "packages/core/environment/core-environment-server-internal/src/pid_config.ts",
+        "path": "src/core/packages/environment/server-internal/src/pid_config.ts",
+        "lineNumber": 21,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -38,7 +40,9 @@
         "tags": [],
         "label": "pidConfig",
         "description": [],
-        "path": "packages/core/environment/core-environment-server-internal/src/pid_config.ts",
+        "path": "src/core/packages/environment/server-internal/src/pid_config.ts",
+        "lineNumber": 13,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -49,7 +53,9 @@
             "tags": [],
             "label": "path",
             "description": [],
-            "path": "packages/core/environment/core-environment-server-internal/src/pid_config.ts",
+            "path": "src/core/packages/environment/server-internal/src/pid_config.ts",
+            "lineNumber": 14,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -86,7 +92,9 @@
               },
               "<boolean>; }>"
             ],
-            "path": "packages/core/environment/core-environment-server-internal/src/pid_config.ts",
+            "path": "src/core/packages/environment/server-internal/src/pid_config.ts",
+            "lineNumber": 15,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           }

@@ -17,7 +17,9 @@
         "tags": [],
         "label": "I18nService",
         "description": [],
-        "path": "packages/core/i18n/core-i18n-server-internal/src/i18n_service.ts",
+        "path": "src/core/packages/i18n/server-internal/src/i18n_service.ts",
+        "lineNumber": 42,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -31,7 +33,9 @@
             "signature": [
               "any"
             ],
-            "path": "packages/core/i18n/core-i18n-server-internal/src/i18n_service.ts",
+            "path": "src/core/packages/i18n/server-internal/src/i18n_service.ts",
+            "lineNumber": 46,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -45,7 +49,9 @@
                 "signature": [
                   "CoreContext"
                 ],
-                "path": "packages/core/i18n/core-i18n-server-internal/src/i18n_service.ts",
+                "path": "src/core/packages/i18n/server-internal/src/i18n_service.ts",
+                "lineNumber": 46,
+                "columnNumber": 15,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -64,16 +70,12 @@
               "({ pluginPaths, http }: ",
               "PrebootDeps",
               ") => Promise<",
-              {
-                "pluginId": "@kbn/core-i18n-server-internal",
-                "scope": "server",
-                "docId": "kibKbnCoreI18nServerInternalPluginApi",
-                "section": "def-server.InternalI18nServicePreboot",
-                "text": "InternalI18nServicePreboot"
-              },
+              "InternalI18nServicePreboot",
               ">"
             ],
-            "path": "packages/core/i18n/core-i18n-server-internal/src/i18n_service.ts",
+            "path": "src/core/packages/i18n/server-internal/src/i18n_service.ts",
+            "lineNumber": 51,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -87,7 +89,9 @@
                 "signature": [
                   "PrebootDeps"
                 ],
-                "path": "packages/core/i18n/core-i18n-server-internal/src/i18n_service.ts",
+                "path": "src/core/packages/i18n/server-internal/src/i18n_service.ts",
+                "lineNumber": 51,
+                "columnNumber": 24,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -106,16 +110,12 @@
               "({ pluginPaths, http }: ",
               "SetupDeps",
               ") => Promise<",
-              {
-                "pluginId": "@kbn/core-i18n-server",
-                "scope": "server",
-                "docId": "kibKbnCoreI18nServerPluginApi",
-                "section": "def-server.I18nServiceSetup",
-                "text": "I18nServiceSetup"
-              },
+              "I18nServiceSetup",
               ">"
             ],
-            "path": "packages/core/i18n/core-i18n-server-internal/src/i18n_service.ts",
+            "path": "src/core/packages/i18n/server-internal/src/i18n_service.ts",
+            "lineNumber": 63,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -129,7 +129,9 @@
                 "signature": [
                   "SetupDeps"
                 ],
-                "path": "packages/core/i18n/core-i18n-server-internal/src/i18n_service.ts",
+                "path": "src/core/packages/i18n/server-internal/src/i18n_service.ts",
+                "lineNumber": 63,
+                "columnNumber": 22,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -152,7 +154,9 @@
         "signature": [
           "(locale: string, pluginPaths: string[]) => Promise<string[]>"
         ],
-        "path": "packages/core/i18n/core-i18n-server-internal/src/get_kibana_translation_files.ts",
+        "path": "src/core/packages/i18n/server-internal/src/get_kibana_translation_files.ts",
+        "lineNumber": 16,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -166,7 +170,9 @@
             "signature": [
               "string"
             ],
-            "path": "packages/core/i18n/core-i18n-server-internal/src/get_kibana_translation_files.ts",
+            "path": "src/core/packages/i18n/server-internal/src/get_kibana_translation_files.ts",
+            "lineNumber": 17,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -181,7 +187,9 @@
             "signature": [
               "string[]"
             ],
-            "path": "packages/core/i18n/core-i18n-server-internal/src/get_kibana_translation_files.ts",
+            "path": "src/core/packages/i18n/server-internal/src/get_kibana_translation_files.ts",
+            "lineNumber": 18,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -199,7 +207,9 @@
         "tags": [],
         "label": "InternalI18nServicePreboot",
         "description": [],
-        "path": "packages/core/i18n/core-i18n-server-internal/src/i18n_service.ts",
+        "path": "src/core/packages/i18n/server-internal/src/i18n_service.ts",
+        "lineNumber": 38,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -213,7 +223,9 @@
             "signature": [
               "() => string"
             ],
-            "path": "packages/core/i18n/core-i18n-server-internal/src/i18n_service.ts",
+            "path": "src/core/packages/i18n/server-internal/src/i18n_service.ts",
+            "lineNumber": 39,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -235,7 +247,9 @@
         "signature": [
           "{ readonly locale: string; }"
         ],
-        "path": "packages/core/i18n/core-i18n-server-internal/src/i18n_config.ts",
+        "path": "src/core/packages/i18n/server-internal/src/i18n_config.ts",
+        "lineNumber": 20,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -252,7 +266,9 @@
         "signature": [
           "string[]"
         ],
-        "path": "packages/core/i18n/core-i18n-server-internal/src/constants.ts",
+        "path": "src/core/packages/i18n/server-internal/src/constants.ts",
+        "lineNumber": 13,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false

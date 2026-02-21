@@ -17,7 +17,9 @@
         "tags": [],
         "label": "CustomBrandingService",
         "description": [],
-        "path": "packages/core/custom-branding/core-custom-branding-server-internal/custom_branding_service.ts",
+        "path": "src/core/packages/custom-branding/server-internal/custom_branding_service.ts",
+        "lineNumber": 26,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -31,7 +33,9 @@
             "signature": [
               "any"
             ],
-            "path": "packages/core/custom-branding/core-custom-branding-server-internal/custom_branding_service.ts",
+            "path": "src/core/packages/custom-branding/server-internal/custom_branding_service.ts",
+            "lineNumber": 32,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -45,7 +49,9 @@
                 "signature": [
                   "CoreContext"
                 ],
-                "path": "packages/core/custom-branding/core-custom-branding-server-internal/custom_branding_service.ts",
+                "path": "src/core/packages/custom-branding/server-internal/custom_branding_service.ts",
+                "lineNumber": 32,
+                "columnNumber": 15,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -64,7 +70,9 @@
               "() => ",
               "InternalCustomBrandingSetup"
             ],
-            "path": "packages/core/custom-branding/core-custom-branding-server-internal/custom_branding_service.ts",
+            "path": "src/core/packages/custom-branding/server-internal/custom_branding_service.ts",
+            "lineNumber": 36,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -79,15 +87,11 @@
             "description": [],
             "signature": [
               "() => ",
-              {
-                "pluginId": "@kbn/core-custom-branding-server",
-                "scope": "server",
-                "docId": "kibKbnCoreCustomBrandingServerPluginApi",
-                "section": "def-server.CustomBrandingStart",
-                "text": "CustomBrandingStart"
-              }
+              "CustomBrandingStart"
             ],
-            "path": "packages/core/custom-branding/core-custom-branding-server-internal/custom_branding_service.ts",
+            "path": "src/core/packages/custom-branding/server-internal/custom_branding_service.ts",
+            "lineNumber": 55,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -103,7 +107,9 @@
             "signature": [
               "() => void"
             ],
-            "path": "packages/core/custom-branding/core-custom-branding-server-internal/custom_branding_service.ts",
+            "path": "src/core/packages/custom-branding/server-internal/custom_branding_service.ts",
+            "lineNumber": 60,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],

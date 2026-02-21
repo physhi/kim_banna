@@ -22,7 +22,9 @@
         "tags": [],
         "label": "userSettingsServiceMock",
         "description": [],
-        "path": "packages/core/user-settings/core-user-settings-server-mocks/src/user_settings_service.mock.ts",
+        "path": "src/core/packages/user-settings/server-mocks/src/user_settings_service.mock.ts",
+        "lineNumber": 31,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -46,7 +48,9 @@
               "UserSettingsService",
               ">>"
             ],
-            "path": "packages/core/user-settings/core-user-settings-server-mocks/src/user_settings_service.mock.ts",
+            "path": "src/core/packages/user-settings/server-mocks/src/user_settings_service.mock.ts",
+            "lineNumber": 32,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -64,7 +68,9 @@
               "InternalUserSettingsServiceSetup",
               ">"
             ],
-            "path": "packages/core/user-settings/core-user-settings-server-mocks/src/user_settings_service.mock.ts",
+            "path": "src/core/packages/user-settings/server-mocks/src/user_settings_service.mock.ts",
+            "lineNumber": 33,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],

@@ -18,13 +18,7 @@
             "text": "NavigationPublicPlugin"
           },
           " implements ",
-          {
-            "pluginId": "@kbn/core-plugins-browser",
-            "scope": "public",
-            "docId": "kibKbnCorePluginsBrowserPluginApi",
-            "section": "def-public.Plugin",
-            "text": "Plugin"
-          },
+          "Plugin",
           "<",
           {
             "pluginId": "navigation",
@@ -47,7 +41,9 @@
           "NavigationPublicStartDependencies",
           ">"
         ],
-        "path": "src/plugins/navigation/public/plugin.tsx",
+        "path": "src/platform/plugins/shared/navigation/public/plugin.tsx",
+        "lineNumber": 33,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -61,7 +57,9 @@
             "signature": [
               "any"
             ],
-            "path": "src/plugins/navigation/public/plugin.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/plugin.tsx",
+            "lineNumber": 49,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -73,16 +71,12 @@
                 "label": "initializerContext",
                 "description": [],
                 "signature": [
-                  {
-                    "pluginId": "@kbn/core-plugins-browser",
-                    "scope": "public",
-                    "docId": "kibKbnCorePluginsBrowserPluginApi",
-                    "section": "def-public.PluginInitializerContext",
-                    "text": "PluginInitializerContext"
-                  },
+                  "PluginInitializerContext",
                   "<object>"
                 ],
-                "path": "src/plugins/navigation/public/plugin.tsx",
+                "path": "src/platform/plugins/shared/navigation/public/plugin.tsx",
+                "lineNumber": 49,
+                "columnNumber": 15,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -98,15 +92,11 @@
             "label": "setup",
             "description": [],
             "signature": [
-              "(_core: ",
-              {
-                "pluginId": "@kbn/core-lifecycle-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreLifecycleBrowserPluginApi",
-                "section": "def-public.CoreSetup",
-                "text": "CoreSetup"
-              },
-              "<object, unknown>) => ",
+              "(core: ",
+              "CoreSetup",
+              "<{}, unknown>, deps: ",
+              "NavigationPublicSetupDependencies",
+              ") => ",
               {
                 "pluginId": "navigation",
                 "scope": "public",
@@ -115,7 +105,9 @@
                 "text": "NavigationPublicSetup"
               }
             ],
-            "path": "src/plugins/navigation/public/plugin.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/plugin.tsx",
+            "lineNumber": 51,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -124,19 +116,32 @@
                 "id": "def-public.NavigationPublicPlugin.setup.$1",
                 "type": "Object",
                 "tags": [],
-                "label": "_core",
+                "label": "core",
                 "description": [],
                 "signature": [
-                  {
-                    "pluginId": "@kbn/core-lifecycle-browser",
-                    "scope": "public",
-                    "docId": "kibKbnCoreLifecycleBrowserPluginApi",
-                    "section": "def-public.CoreSetup",
-                    "text": "CoreSetup"
-                  },
-                  "<object, unknown>"
+                  "CoreSetup",
+                  "<{}, unknown>"
                 ],
-                "path": "src/plugins/navigation/public/plugin.tsx",
+                "path": "src/platform/plugins/shared/navigation/public/plugin.tsx",
+                "lineNumber": 51,
+                "columnNumber": 16,
+                "deprecated": false,
+                "trackAdoption": false,
+                "isRequired": true
+              },
+              {
+                "parentPluginId": "navigation",
+                "id": "def-public.NavigationPublicPlugin.setup.$2",
+                "type": "Object",
+                "tags": [],
+                "label": "deps",
+                "description": [],
+                "signature": [
+                  "NavigationPublicSetupDependencies"
+                ],
+                "path": "src/platform/plugins/shared/navigation/public/plugin.tsx",
+                "lineNumber": 51,
+                "columnNumber": 33,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -153,13 +158,7 @@
             "description": [],
             "signature": [
               "(core: ",
-              {
-                "pluginId": "@kbn/core-lifecycle-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreLifecycleBrowserPluginApi",
-                "section": "def-public.CoreStart",
-                "text": "CoreStart"
-              },
+              "CoreStart",
               ", depsStart: ",
               "NavigationPublicStartDependencies",
               ") => ",
@@ -171,7 +170,9 @@
                 "text": "NavigationPublicStart"
               }
             ],
-            "path": "src/plugins/navigation/public/plugin.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/plugin.tsx",
+            "lineNumber": 61,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -183,15 +184,11 @@
                 "label": "core",
                 "description": [],
                 "signature": [
-                  {
-                    "pluginId": "@kbn/core-lifecycle-browser",
-                    "scope": "public",
-                    "docId": "kibKbnCoreLifecycleBrowserPluginApi",
-                    "section": "def-public.CoreStart",
-                    "text": "CoreStart"
-                  }
+                  "CoreStart"
                 ],
-                "path": "src/plugins/navigation/public/plugin.tsx",
+                "path": "src/platform/plugins/shared/navigation/public/plugin.tsx",
+                "lineNumber": 62,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -206,7 +203,9 @@
                 "signature": [
                   "NavigationPublicStartDependencies"
                 ],
-                "path": "src/plugins/navigation/public/plugin.tsx",
+                "path": "src/platform/plugins/shared/navigation/public/plugin.tsx",
+                "lineNumber": 63,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -224,7 +223,9 @@
             "signature": [
               "() => void"
             ],
-            "path": "src/plugins/navigation/public/plugin.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/plugin.tsx",
+            "lineNumber": 151,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [],
@@ -239,7 +240,9 @@
         "parentPluginId": "navigation",
         "id": "def-public.TopNavMenu",
         "type": "Function",
-        "tags": [],
+        "tags": [
+          "deprecated"
+        ],
         "label": "TopNavMenu",
         "description": [],
         "signature": [
@@ -253,9 +256,33 @@
           },
           "<QT>) => React.ReactElement<any, string | React.JSXElementConstructor<any>> | null"
         ],
-        "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu.tsx",
-        "deprecated": false,
+        "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu.tsx",
+        "lineNumber": 79,
+        "columnNumber": 1,
+        "deprecated": true,
         "trackAdoption": false,
+        "references": [
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/discover_topnav_menu.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/discover_topnav_menu.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/__mocks__/services.ts"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/__mocks__/services.ts"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/__mocks__/services.ts"
+          }
+        ],
         "children": [
           {
             "parentPluginId": "navigation",
@@ -274,7 +301,9 @@
               },
               "<QT>"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu.tsx",
+            "lineNumber": 83,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "isRequired": true
@@ -287,7 +316,9 @@
         "parentPluginId": "navigation",
         "id": "def-public.TopNavMenuBadges",
         "type": "Function",
-        "tags": [],
+        "tags": [
+          "deprecated"
+        ],
         "label": "TopNavMenuBadges",
         "description": [],
         "signature": [
@@ -299,11 +330,14 @@
             "section": "def-public.TopNavMenuBadgeProps",
             "text": "TopNavMenuBadgeProps"
           },
-          "[] | undefined; }) => JSX.Element | null"
+          "[] | undefined; }) => React.JSX.Element | null"
         ],
-        "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_badges.tsx",
-        "deprecated": false,
+        "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_badges.tsx",
+        "lineNumber": 29,
+        "columnNumber": 14,
+        "deprecated": true,
         "trackAdoption": false,
+        "references": [],
         "children": [
           {
             "parentPluginId": "navigation",
@@ -312,7 +346,9 @@
             "tags": [],
             "label": "{ badges }",
             "description": [],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_badges.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_badges.tsx",
+            "lineNumber": 29,
+            "columnNumber": 46,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -333,7 +369,9 @@
                   },
                   "[] | undefined"
                 ],
-                "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_badges.tsx",
+                "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_badges.tsx",
+                "lineNumber": 29,
+                "columnNumber": 48,
                 "deprecated": false,
                 "trackAdoption": false
               }
@@ -347,71 +385,37 @@
         "parentPluginId": "navigation",
         "id": "def-public.TopNavMenuItems",
         "type": "Function",
-        "tags": [],
+        "tags": [
+          "deprecated"
+        ],
         "label": "TopNavMenuItems",
         "description": [],
         "signature": [
-          "({ config, className, }: { config: ",
-          {
-            "pluginId": "navigation",
-            "scope": "public",
-            "docId": "kibNavigationPluginApi",
-            "section": "def-public.TopNavMenuData",
-            "text": "TopNavMenuData"
-          },
-          "[] | undefined; className?: string | undefined; }) => JSX.Element | null"
+          "({ config, className, popoverBreakpoints, gutterSize, }: TopNavMenuItemsProps) => React.JSX.Element | null"
         ],
-        "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_items.tsx",
-        "deprecated": false,
+        "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_items.tsx",
+        "lineNumber": 28,
+        "columnNumber": 14,
+        "deprecated": true,
         "trackAdoption": false,
+        "references": [],
         "children": [
           {
             "parentPluginId": "navigation",
             "id": "def-public.TopNavMenuItems.$1",
             "type": "Object",
             "tags": [],
-            "label": "{\n  config,\n  className,\n}",
+            "label": "{\n  config,\n  className,\n  popoverBreakpoints = POPOVER_BREAKPOINTS,\n  gutterSize = 'xs',\n}",
             "description": [],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_items.tsx",
+            "signature": [
+              "TopNavMenuItemsProps"
+            ],
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_items.tsx",
+            "lineNumber": 28,
+            "columnNumber": 33,
             "deprecated": false,
             "trackAdoption": false,
-            "children": [
-              {
-                "parentPluginId": "navigation",
-                "id": "def-public.TopNavMenuItems.$1.config",
-                "type": "Array",
-                "tags": [],
-                "label": "config",
-                "description": [],
-                "signature": [
-                  {
-                    "pluginId": "navigation",
-                    "scope": "public",
-                    "docId": "kibNavigationPluginApi",
-                    "section": "def-public.TopNavMenuData",
-                    "text": "TopNavMenuData"
-                  },
-                  "[] | undefined"
-                ],
-                "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_items.tsx",
-                "deprecated": false,
-                "trackAdoption": false
-              },
-              {
-                "parentPluginId": "navigation",
-                "id": "def-public.TopNavMenuItems.$1.className",
-                "type": "string",
-                "tags": [],
-                "label": "className",
-                "description": [],
-                "signature": [
-                  "string | undefined"
-                ],
-                "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_items.tsx",
-                "deprecated": false,
-                "trackAdoption": false
-              }
-            ]
+            "isRequired": true
           }
         ],
         "returnComment": [],
@@ -423,12 +427,94 @@
         "parentPluginId": "navigation",
         "id": "def-public.TopNavMenuData",
         "type": "Interface",
-        "tags": [],
+        "tags": [
+          "deprecated"
+        ],
         "label": "TopNavMenuData",
         "description": [],
-        "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
-        "deprecated": false,
+        "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+        "lineNumber": 19,
+        "columnNumber": 1,
+        "deprecated": true,
         "trackAdoption": false,
+        "references": [
+          {
+            "plugin": "@kbn/lens-common",
+            "path": "src/platform/packages/shared/kbn-lens-common/types.ts"
+          },
+          {
+            "plugin": "@kbn/lens-common",
+            "path": "src/platform/packages/shared/kbn-lens-common/types.ts"
+          },
+          {
+            "plugin": "visualizations",
+            "path": "src/platform/plugins/shared/visualizations/public/visualize_app/utils/get_top_nav_config.tsx"
+          },
+          {
+            "plugin": "visualizations",
+            "path": "src/platform/plugins/shared/visualizations/public/visualize_app/utils/get_top_nav_config.tsx"
+          },
+          {
+            "plugin": "visualizations",
+            "path": "src/platform/plugins/shared/visualizations/public/visualize_app/utils/get_top_nav_config.tsx"
+          },
+          {
+            "plugin": "lens",
+            "path": "x-pack/platform/plugins/shared/lens/public/app_plugin/lens_top_nav.tsx"
+          },
+          {
+            "plugin": "lens",
+            "path": "x-pack/platform/plugins/shared/lens/public/app_plugin/lens_top_nav.tsx"
+          },
+          {
+            "plugin": "lens",
+            "path": "x-pack/platform/plugins/shared/lens/public/app_plugin/lens_top_nav.tsx"
+          },
+          {
+            "plugin": "lens",
+            "path": "x-pack/platform/plugins/shared/lens/public/app_plugin/lens_top_nav.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/app_menu_actions/convert_to_top_nav_item.ts"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/app_menu_actions/convert_to_top_nav_item.ts"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/use_top_nav_links.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/use_top_nav_links.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/discover_topnav_menu.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/discover_topnav_menu.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/discover_topnav_menu.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/discover_topnav_menu.tsx"
+          },
+          {
+            "plugin": "fleet",
+            "path": "x-pack/platform/plugins/shared/fleet/public/applications/fleet/app.tsx"
+          },
+          {
+            "plugin": "fleet",
+            "path": "x-pack/platform/plugins/shared/fleet/public/applications/fleet/app.tsx"
+          }
+        ],
         "children": [
           {
             "parentPluginId": "navigation",
@@ -440,7 +526,25 @@
             "signature": [
               "string | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 23,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-public.TopNavMenuData.htmlId",
+            "type": "string",
+            "tags": [],
+            "label": "htmlId",
+            "description": [],
+            "signature": [
+              "string | undefined"
+            ],
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 24,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -451,7 +555,9 @@
             "tags": [],
             "label": "label",
             "description": [],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 25,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -465,7 +571,9 @@
             "signature": [
               "(anchorElement: HTMLElement) => void"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 26,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -480,7 +588,9 @@
                 "signature": [
                   "HTMLElement"
                 ],
-                "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+                "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+                "lineNumber": 17,
+                "columnNumber": 33,
                 "deprecated": false,
                 "trackAdoption": false
               }
@@ -496,7 +606,9 @@
             "signature": [
               "string | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 27,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -510,7 +622,9 @@
             "signature": [
               "string | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 28,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -524,7 +638,9 @@
             "signature": [
               "string | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 29,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -538,7 +654,9 @@
             "signature": [
               "boolean | (() => boolean) | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 30,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -552,7 +670,25 @@
             "signature": [
               "string | (() => string | undefined) | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 31,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-public.TopNavMenuData.tooltipTitle",
+            "type": "string",
+            "tags": [],
+            "label": "tooltipTitle",
+            "description": [],
+            "signature": [
+              "string | undefined"
+            ],
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 32,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -570,7 +706,7 @@
               "DisambiguateSet",
               "<(",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\">) | (",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\">) | (",
               "DisambiguateSet",
               "<WithAnchorProps, WithButtonProps> & { onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined; onClickAriaLabel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLButtonElement>, \"color\" | \"onClick\">), WithSpanProps> & WithSpanProps & { iconType?: ",
               "IconType",
@@ -578,7 +714,7 @@
               "ToolTipPositions",
               " | undefined; anchorProps?: (",
               "CommonProps",
-              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"subdued\" | \"accent\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"middle\" | \"baseline\" | undefined; } & ",
+              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"accent\" | \"warning\" | \"subdued\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"baseline\" | \"middle\" | undefined; } & ",
               "DisambiguateSet",
               "<LabelAsNode, LabelAsString> & LabelAsString) | (",
               "CommonProps",
@@ -586,7 +722,7 @@
               "DisambiguateSet",
               "<(",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\">) | (",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\">) | (",
               "DisambiguateSet",
               "<WithAnchorProps, WithButtonProps> & { onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined; onClickAriaLabel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLButtonElement>, \"color\" | \"onClick\">), WithSpanProps> & WithSpanProps & { iconType?: ",
               "IconType",
@@ -594,7 +730,7 @@
               "ToolTipPositions",
               " | undefined; anchorProps?: (",
               "CommonProps",
-              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"subdued\" | \"accent\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"middle\" | \"baseline\" | undefined; } & ",
+              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"accent\" | \"warning\" | \"subdued\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"baseline\" | \"middle\" | undefined; } & ",
               "DisambiguateSet",
               "<LabelAsString, LabelAsNode> & ",
               "DisambiguateSet",
@@ -604,17 +740,17 @@
               "DisambiguateSet",
               "<WithSpanProps, (",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\">) | (",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\">) | (",
               "DisambiguateSet",
               "<WithAnchorProps, WithButtonProps> & { onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined; onClickAriaLabel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLButtonElement>, \"color\" | \"onClick\">)> & ",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\"> & { iconType?: ",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\"> & { iconType?: ",
               "IconType",
               " | undefined; label: React.ReactNode; tooltipContent?: React.ReactNode; tooltipPosition?: ",
               "ToolTipPositions",
               " | undefined; anchorProps?: (",
               "CommonProps",
-              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"subdued\" | \"accent\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"middle\" | \"baseline\" | undefined; } & ",
+              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"accent\" | \"warning\" | \"subdued\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"baseline\" | \"middle\" | undefined; } & ",
               "DisambiguateSet",
               "<LabelAsNode, LabelAsString> & LabelAsString) | (",
               "CommonProps",
@@ -622,17 +758,17 @@
               "DisambiguateSet",
               "<WithSpanProps, (",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\">) | (",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\">) | (",
               "DisambiguateSet",
               "<WithAnchorProps, WithButtonProps> & { onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined; onClickAriaLabel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLButtonElement>, \"color\" | \"onClick\">)> & ",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\"> & { iconType?: ",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\"> & { iconType?: ",
               "IconType",
               " | undefined; label: React.ReactNode; tooltipContent?: React.ReactNode; tooltipPosition?: ",
               "ToolTipPositions",
               " | undefined; anchorProps?: (",
               "CommonProps",
-              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"subdued\" | \"accent\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"middle\" | \"baseline\" | undefined; } & ",
+              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"accent\" | \"warning\" | \"subdued\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"baseline\" | \"middle\" | undefined; } & ",
               "DisambiguateSet",
               "<LabelAsString, LabelAsNode> & ",
               "DisambiguateSet",
@@ -642,17 +778,17 @@
               "DisambiguateSet",
               "<WithSpanProps, (",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\">) | (",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\">) | (",
               "DisambiguateSet",
               "<WithAnchorProps, WithButtonProps> & { onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined; onClickAriaLabel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLButtonElement>, \"color\" | \"onClick\">)> & ",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\"> & { iconType?: ",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\"> & { iconType?: ",
               "IconType",
               " | undefined; label: React.ReactNode; tooltipContent?: React.ReactNode; tooltipPosition?: ",
               "ToolTipPositions",
               " | undefined; anchorProps?: (",
               "CommonProps",
-              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"subdued\" | \"accent\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"middle\" | \"baseline\" | undefined; } & ",
+              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"accent\" | \"warning\" | \"subdued\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"baseline\" | \"middle\" | undefined; } & ",
               "DisambiguateSet",
               "<LabelAsString, LabelAsNode> & ",
               "DisambiguateSet",
@@ -662,7 +798,7 @@
               "DisambiguateSet",
               "<WithSpanProps, (",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\">) | (",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\">) | (",
               "DisambiguateSet",
               "<WithAnchorProps, WithButtonProps> & { onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined; onClickAriaLabel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLButtonElement>, \"color\" | \"onClick\">)> & ",
               "DisambiguateSet",
@@ -672,7 +808,7 @@
               "ToolTipPositions",
               " | undefined; anchorProps?: (",
               "CommonProps",
-              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"subdued\" | \"accent\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"middle\" | \"baseline\" | undefined; } & ",
+              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"accent\" | \"warning\" | \"subdued\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"baseline\" | \"middle\" | undefined; } & ",
               "DisambiguateSet",
               "<LabelAsNode, LabelAsString> & LabelAsString) | (",
               "CommonProps",
@@ -680,7 +816,7 @@
               "DisambiguateSet",
               "<WithSpanProps, (",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\">) | (",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\">) | (",
               "DisambiguateSet",
               "<WithAnchorProps, WithButtonProps> & { onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined; onClickAriaLabel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLButtonElement>, \"color\" | \"onClick\">)> & ",
               "DisambiguateSet",
@@ -690,7 +826,7 @@
               "ToolTipPositions",
               " | undefined; anchorProps?: (",
               "CommonProps",
-              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"subdued\" | \"accent\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"middle\" | \"baseline\" | undefined; } & ",
+              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"accent\" | \"warning\" | \"subdued\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"baseline\" | \"middle\" | undefined; } & ",
               "DisambiguateSet",
               "<LabelAsString, LabelAsNode> & ",
               "DisambiguateSet",
@@ -700,7 +836,7 @@
               "DisambiguateSet",
               "<WithSpanProps, (",
               "DisambiguateSet",
-              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"onClick\" | \"href\">) | (",
+              "<WithButtonProps, WithAnchorProps> & { href: string; target?: string | undefined; rel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLAnchorElement>, \"color\" | \"href\" | \"onClick\">) | (",
               "DisambiguateSet",
               "<WithAnchorProps, WithButtonProps> & { onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined; onClickAriaLabel?: string | undefined; } & Omit<React.HTMLAttributes<HTMLButtonElement>, \"color\" | \"onClick\">)> & ",
               "DisambiguateSet",
@@ -710,13 +846,15 @@
               "ToolTipPositions",
               " | undefined; anchorProps?: (",
               "CommonProps",
-              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"subdued\" | \"accent\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"middle\" | \"baseline\" | undefined; } & ",
+              " & React.HTMLAttributes<HTMLSpanElement>) | undefined; title?: string | undefined; color?: \"accent\" | \"warning\" | \"subdued\" | \"hollow\" | undefined; size?: \"m\" | \"s\" | undefined; alignment?: \"baseline\" | \"middle\" | undefined; } & ",
               "DisambiguateSet",
               "<LabelAsString, LabelAsNode> & ",
               "DisambiguateSet",
               "<{ tooltipContent: React.ReactNode; title?: string | undefined; }, { title: string; tooltipContent?: React.ReactNode; }> & { title: string; tooltipContent?: React.ReactNode; } & { label: React.ReactNode; }) | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 33,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -730,7 +868,41 @@
             "signature": [
               "boolean | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 34,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-public.TopNavMenuData.fill",
+            "type": "CompoundType",
+            "tags": [],
+            "label": "fill",
+            "description": [],
+            "signature": [
+              "boolean | undefined"
+            ],
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 35,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-public.TopNavMenuData.color",
+            "type": "string",
+            "tags": [],
+            "label": "color",
+            "description": [],
+            "signature": [
+              "string | undefined"
+            ],
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 36,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -744,21 +916,26 @@
             "signature": [
               "boolean | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 37,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
           {
             "parentPluginId": "navigation",
             "id": "def-public.TopNavMenuData.iconType",
-            "type": "string",
+            "type": "CompoundType",
             "tags": [],
             "label": "iconType",
             "description": [],
             "signature": [
-              "string | undefined"
+              "IconType",
+              " | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 38,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -772,7 +949,25 @@
             "signature": [
               "\"right\" | \"left\" | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 39,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-public.TopNavMenuData.iconOnly",
+            "type": "CompoundType",
+            "tags": [],
+            "label": "iconOnly",
+            "description": [],
+            "signature": [
+              "boolean | undefined"
+            ],
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 40,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -786,7 +981,9 @@
             "signature": [
               "string | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 41,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -800,7 +997,9 @@
             "signature": [
               "string | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 42,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -815,7 +1014,35 @@
               "IntlShape",
               " | undefined"
             ],
-            "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 43,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-public.TopNavMenuData.splitButtonProps",
+            "type": "CompoundType",
+            "tags": [],
+            "label": "splitButtonProps",
+            "description": [],
+            "signature": [
+              "(",
+              {
+                "pluginId": "@kbn/split-button",
+                "scope": "common",
+                "docId": "kibKbnSplitButtonPluginApi",
+                "section": "def-common.SplitButtonProps",
+                "text": "SplitButtonProps"
+              },
+              " & { run: ",
+              "TopNavMenuAction",
+              "; }) | undefined"
+            ],
+            "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_data.tsx",
+            "lineNumber": 44,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -833,19 +1060,14 @@
         "label": "AddSolutionNavigationArg",
         "description": [],
         "signature": [
-          "Omit<",
-          "SolutionNavigation",
-          ", \"sideNavComponent\"> & { dataTestSubj?: string | undefined; panelContentProvider?: ",
-          {
-            "pluginId": "@kbn/shared-ux-chrome-navigation",
-            "scope": "public",
-            "docId": "kibKbnSharedUxChromeNavigationPluginApi",
-            "section": "def-public.ContentProvider",
-            "text": "ContentProvider"
-          },
-          " | undefined; }"
+          "SolutionNavigationDefinition",
+          "<",
+          "AppDeepLinkId",
+          ">"
         ],
-        "path": "src/plugins/navigation/public/types.ts",
+        "path": "src/platform/plugins/shared/navigation/public/types.ts",
+        "lineNumber": 31,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -858,9 +1080,11 @@
         "label": "SolutionType",
         "description": [],
         "signature": [
-          "\"security\" | \"analytics\" | \"es\" | \"oblt\""
+          "\"security\" | \"analytics\" | \"oblt\" | \"es\""
         ],
-        "path": "src/plugins/navigation/public/types.ts",
+        "path": "src/platform/plugins/shared/navigation/public/types.ts",
+        "lineNumber": 68,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -869,7 +1093,9 @@
         "parentPluginId": "navigation",
         "id": "def-public.TopNavMenuBadgeProps",
         "type": "Type",
-        "tags": [],
+        "tags": [
+          "deprecated"
+        ],
         "label": "TopNavMenuBadgeProps",
         "description": [],
         "signature": [
@@ -878,16 +1104,70 @@
           "EuiToolTipProps",
           "> | undefined; renderCustomBadge?: ((props: { badgeText: string; }) => React.ReactElement<any, string | React.JSXElementConstructor<any>>) | undefined; }"
         ],
-        "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_badges.tsx",
-        "deprecated": false,
+        "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_badges.tsx",
+        "lineNumber": 17,
+        "columnNumber": 1,
+        "deprecated": true,
         "trackAdoption": false,
+        "references": [
+          {
+            "plugin": "@kbn/managed-content-badge",
+            "path": "src/platform/packages/private/kbn-managed-content-badge/index.ts"
+          },
+          {
+            "plugin": "@kbn/managed-content-badge",
+            "path": "src/platform/packages/private/kbn-managed-content-badge/index.ts"
+          },
+          {
+            "plugin": "dashboard",
+            "path": "src/platform/plugins/shared/dashboard/public/dashboard_top_nav/internal_dashboard_top_nav.tsx"
+          },
+          {
+            "plugin": "dashboard",
+            "path": "src/platform/plugins/shared/dashboard/public/dashboard_top_nav/internal_dashboard_top_nav.tsx"
+          },
+          {
+            "plugin": "@kbn/unsaved-changes-badge",
+            "path": "src/platform/packages/private/kbn-unsaved-changes-badge/src/utils/get_top_nav_unsaved_changes_badge.tsx"
+          },
+          {
+            "plugin": "@kbn/unsaved-changes-badge",
+            "path": "src/platform/packages/private/kbn-unsaved-changes-badge/src/utils/get_top_nav_unsaved_changes_badge.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/get_top_nav_badges.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/get_top_nav_badges.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/get_top_nav_badges.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/discover_topnav_menu.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/discover_topnav_menu.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/application/main/components/top_nav/discover_topnav_menu.tsx"
+          }
+        ],
         "initialIsOpen": false
       },
       {
         "parentPluginId": "navigation",
         "id": "def-public.TopNavMenuProps",
         "type": "Type",
-        "tags": [],
+        "tags": [
+          "deprecated"
+        ],
         "label": "TopNavMenuProps",
         "description": [],
         "signature": [
@@ -923,19 +1203,49 @@
             "section": "def-public.UnifiedSearchPublicPluginStart",
             "text": "UnifiedSearchPublicPluginStart"
           },
-          " | undefined; className?: string | undefined; visible?: boolean | undefined; setMenuMountPoint?: ((menuMount: ",
-          {
-            "pluginId": "@kbn/core-mount-utils-browser",
-            "scope": "public",
-            "docId": "kibKbnCoreMountUtilsBrowserPluginApi",
-            "section": "def-public.MountPoint",
-            "text": "MountPoint"
-          },
-          "<HTMLElement> | undefined) => void) | undefined; }"
+          " | undefined; className?: string | undefined; visible?: boolean | undefined; gutterSize?: \"m\" | \"s\" | \"l\" | \"xs\" | \"xxs\" | undefined; setMenuMountPoint?: ((menuMount: ",
+          "MountPoint",
+          "<HTMLElement> | undefined) => void) | undefined; popoverBreakpoints?: string[] | undefined; }"
         ],
-        "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu.tsx",
-        "deprecated": false,
+        "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu.tsx",
+        "lineNumber": 24,
+        "columnNumber": 1,
+        "deprecated": true,
         "trackAdoption": false,
+        "references": [
+          {
+            "plugin": "lens",
+            "path": "x-pack/platform/plugins/shared/lens/public/app_plugin/lens_top_nav.tsx"
+          },
+          {
+            "plugin": "lens",
+            "path": "x-pack/platform/plugins/shared/lens/public/app_plugin/lens_top_nav.tsx"
+          },
+          {
+            "plugin": "lens",
+            "path": "x-pack/platform/plugins/shared/lens/public/app_plugin/lens_top_nav.tsx"
+          },
+          {
+            "plugin": "lens",
+            "path": "x-pack/platform/plugins/shared/lens/public/app_plugin/lens_top_nav.tsx"
+          },
+          {
+            "plugin": "dashboard",
+            "path": "src/platform/plugins/shared/dashboard/public/dashboard_top_nav/internal_dashboard_top_nav.tsx"
+          },
+          {
+            "plugin": "dashboard",
+            "path": "src/platform/plugins/shared/dashboard/public/dashboard_top_nav/internal_dashboard_top_nav.tsx"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/customizations/customization_types/search_bar_customization.ts"
+          },
+          {
+            "plugin": "discover",
+            "path": "src/platform/plugins/shared/discover/public/customizations/customization_types/search_bar_customization.ts"
+          }
+        ],
         "initialIsOpen": false
       }
     ],
@@ -947,7 +1257,9 @@
       "tags": [],
       "label": "NavigationPublicSetup",
       "description": [],
-      "path": "src/plugins/navigation/public/types.ts",
+      "path": "src/platform/plugins/shared/navigation/public/types.ts",
+      "lineNumber": 23,
+      "columnNumber": 1,
       "deprecated": false,
       "trackAdoption": false,
       "children": [
@@ -955,7 +1267,9 @@
           "parentPluginId": "navigation",
           "id": "def-public.NavigationPublicSetup.registerMenuItem",
           "type": "Function",
-          "tags": [],
+          "tags": [
+            "deprecated"
+          ],
           "label": "registerMenuItem",
           "description": [],
           "signature": [
@@ -963,9 +1277,21 @@
             "RegisteredTopNavMenuData",
             ") => void"
           ],
-          "path": "src/plugins/navigation/public/types.ts",
-          "deprecated": false,
+          "path": "src/platform/plugins/shared/navigation/public/types.ts",
+          "lineNumber": 24,
+          "columnNumber": 3,
+          "deprecated": true,
           "trackAdoption": false,
+          "references": [
+            {
+              "plugin": "@kbn/test-suites-src",
+              "path": "src/platform/test/plugin_functional/plugins/kbn_top_nav/public/plugin.tsx"
+            },
+            {
+              "plugin": "@kbn/test-suites-src",
+              "path": "src/platform/test/plugin_functional/plugins/kbn_top_nav/public/plugin.tsx"
+            }
+          ],
           "returnComment": [],
           "children": [
             {
@@ -978,7 +1304,9 @@
               "signature": [
                 "RegisteredTopNavMenuData"
               ],
-              "path": "src/plugins/navigation/public/top_nav_menu/top_nav_menu_extensions_registry.ts",
+              "path": "src/platform/plugins/shared/navigation/public/top_nav_menu/top_nav_menu_extensions_registry.ts",
+              "lineNumber": 25,
+              "columnNumber": 19,
               "deprecated": false,
               "trackAdoption": false
             }
@@ -995,7 +1323,9 @@
       "tags": [],
       "label": "NavigationPublicStart",
       "description": [],
-      "path": "src/plugins/navigation/public/types.ts",
+      "path": "src/platform/plugins/shared/navigation/public/types.ts",
+      "lineNumber": 33,
+      "columnNumber": 1,
       "deprecated": false,
       "trackAdoption": false,
       "children": [
@@ -1081,9 +1411,11 @@
               "section": "def-public.TopNavMenuProps",
               "text": "TopNavMenuProps"
             },
-            "<QT>) => JSX.Element; }"
+            "<QT>) => React.JSX.Element; }"
           ],
-          "path": "src/plugins/navigation/public/types.ts",
+          "path": "src/platform/plugins/shared/navigation/public/types.ts",
+          "lineNumber": 34,
+          "columnNumber": 3,
           "deprecated": false,
           "trackAdoption": false
         },
@@ -1098,36 +1430,28 @@
           ],
           "signature": [
             "(solutionNavigationAgg: ",
-            {
-              "pluginId": "navigation",
-              "scope": "public",
-              "docId": "kibNavigationPluginApi",
-              "section": "def-public.AddSolutionNavigationArg",
-              "text": "AddSolutionNavigationArg"
-            },
+            "SolutionNavigation",
             ") => void"
           ],
-          "path": "src/plugins/navigation/public/types.ts",
+          "path": "src/platform/plugins/shared/navigation/public/types.ts",
+          "lineNumber": 51,
+          "columnNumber": 3,
           "deprecated": false,
           "trackAdoption": false,
           "children": [
             {
               "parentPluginId": "navigation",
               "id": "def-public.NavigationPublicStart.addSolutionNavigation.$1",
-              "type": "CompoundType",
+              "type": "Object",
               "tags": [],
               "label": "solutionNavigationAgg",
               "description": [],
               "signature": [
-                {
-                  "pluginId": "navigation",
-                  "scope": "public",
-                  "docId": "kibNavigationPluginApi",
-                  "section": "def-public.AddSolutionNavigationArg",
-                  "text": "AddSolutionNavigationArg"
-                }
+                "SolutionNavigation"
               ],
-              "path": "src/plugins/navigation/public/types.ts",
+              "path": "src/platform/plugins/shared/navigation/public/types.ts",
+              "lineNumber": 52,
+              "columnNumber": 27,
               "deprecated": false,
               "trackAdoption": false,
               "isRequired": true
@@ -1148,7 +1472,9 @@
             "Observable",
             "<boolean>"
           ],
-          "path": "src/plugins/navigation/public/types.ts",
+          "path": "src/platform/plugins/shared/navigation/public/types.ts",
+          "lineNumber": 53,
+          "columnNumber": 3,
           "deprecated": false,
           "trackAdoption": false
         }
@@ -1173,20 +1499,132 @@
     "misc": [
       {
         "parentPluginId": "navigation",
-        "id": "def-common.SOLUTION_NAV_FEATURE_FLAG_NAME",
+        "id": "def-common.DEFAULT_ROUTE_UI_SETTING_ID",
         "type": "string",
         "tags": [],
-        "label": "SOLUTION_NAV_FEATURE_FLAG_NAME",
+        "label": "DEFAULT_ROUTE_UI_SETTING_ID",
         "description": [],
         "signature": [
-          "\"solutionNavEnabled\""
+          "\"defaultRoute\""
         ],
-        "path": "src/plugins/navigation/common/constants.ts",
+        "path": "src/platform/plugins/shared/navigation/common/constants.ts",
+        "lineNumber": 10,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
       }
     ],
-    "objects": []
+    "objects": [
+      {
+        "parentPluginId": "navigation",
+        "id": "def-common.DEFAULT_ROUTES",
+        "type": "Object",
+        "tags": [],
+        "label": "DEFAULT_ROUTES",
+        "description": [],
+        "path": "src/platform/plugins/shared/navigation/common/constants.ts",
+        "lineNumber": 12,
+        "columnNumber": 14,
+        "deprecated": false,
+        "trackAdoption": false,
+        "children": [
+          {
+            "parentPluginId": "navigation",
+            "id": "def-common.DEFAULT_ROUTES.classic",
+            "type": "string",
+            "tags": [],
+            "label": "classic",
+            "description": [],
+            "path": "src/platform/plugins/shared/navigation/common/constants.ts",
+            "lineNumber": 13,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-common.DEFAULT_ROUTES.es",
+            "type": "string",
+            "tags": [],
+            "label": "es",
+            "description": [],
+            "path": "src/platform/plugins/shared/navigation/common/constants.ts",
+            "lineNumber": 14,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-common.DEFAULT_ROUTES.search",
+            "type": "string",
+            "tags": [],
+            "label": "search",
+            "description": [],
+            "path": "src/platform/plugins/shared/navigation/common/constants.ts",
+            "lineNumber": 15,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-common.DEFAULT_ROUTES.oblt",
+            "type": "string",
+            "tags": [],
+            "label": "oblt",
+            "description": [
+              "// O11y aliases"
+            ],
+            "path": "src/platform/plugins/shared/navigation/common/constants.ts",
+            "lineNumber": 17,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-common.DEFAULT_ROUTES.observability",
+            "type": "string",
+            "tags": [],
+            "label": "observability",
+            "description": [],
+            "path": "src/platform/plugins/shared/navigation/common/constants.ts",
+            "lineNumber": 18,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-common.DEFAULT_ROUTES.security",
+            "type": "string",
+            "tags": [],
+            "label": "security",
+            "description": [],
+            "path": "src/platform/plugins/shared/navigation/common/constants.ts",
+            "lineNumber": 19,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          },
+          {
+            "parentPluginId": "navigation",
+            "id": "def-common.DEFAULT_ROUTES.workplaceai",
+            "type": "string",
+            "tags": [],
+            "label": "workplaceai",
+            "description": [],
+            "path": "src/platform/plugins/shared/navigation/common/constants.ts",
+            "lineNumber": 20,
+            "columnNumber": 3,
+            "deprecated": false,
+            "trackAdoption": false
+          }
+        ],
+        "initialIsOpen": false
+      }
+    ]
   }
 }

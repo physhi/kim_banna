@@ -11,7 +11,9 @@
         "description": [
           "\nA registry of sections to add to pages within Advanced Settings."
         ],
-        "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+        "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+        "lineNumber": 35,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -22,7 +24,9 @@
             "tags": [],
             "label": "setup",
             "description": [],
-            "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+            "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+            "lineNumber": 44,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -38,7 +42,9 @@
                 "signature": [
                   "(Component: RegistryComponent, queryMatch: QueryMatchFn) => void"
                 ],
-                "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+                "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+                "lineNumber": 45,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "children": [
@@ -52,7 +58,9 @@
                     "signature": [
                       "RegistryComponent"
                     ],
-                    "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+                    "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+                    "lineNumber": 51,
+                    "columnNumber": 23,
                     "deprecated": false,
                     "trackAdoption": false,
                     "isRequired": true
@@ -67,7 +75,9 @@
                     "signature": [
                       "QueryMatchFn"
                     ],
-                    "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+                    "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+                    "lineNumber": 51,
+                    "columnNumber": 53,
                     "deprecated": false,
                     "trackAdoption": false,
                     "isRequired": true
@@ -87,7 +97,9 @@
                 "signature": [
                   "(Component: RegistryComponent, queryMatch: QueryMatchFn) => void"
                 ],
-                "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+                "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+                "lineNumber": 55,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "children": [
@@ -101,7 +113,9 @@
                     "signature": [
                       "RegistryComponent"
                     ],
-                    "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+                    "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+                    "lineNumber": 61,
+                    "columnNumber": 24,
                     "deprecated": false,
                     "trackAdoption": false,
                     "isRequired": true
@@ -116,7 +130,9 @@
                     "signature": [
                       "QueryMatchFn"
                     ],
-                    "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+                    "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+                    "lineNumber": 61,
+                    "columnNumber": 54,
                     "deprecated": false,
                     "trackAdoption": false,
                     "isRequired": true
@@ -133,7 +149,9 @@
             "tags": [],
             "label": "start",
             "description": [],
-            "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+            "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+            "lineNumber": 66,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -157,7 +175,9 @@
                   },
                   "[]"
                 ],
-                "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+                "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+                "lineNumber": 67,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "children": [],
@@ -183,7 +203,9 @@
                   },
                   "[]"
                 ],
-                "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+                "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+                "lineNumber": 74,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "children": [],
@@ -206,7 +228,9 @@
         "description": [
           "\nProps provided to a `RegistryComponent`."
         ],
-        "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+        "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+        "lineNumber": 14,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -218,15 +242,11 @@
             "label": "toasts",
             "description": [],
             "signature": [
-              {
-                "pluginId": "@kbn/core-notifications-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreNotificationsBrowserPluginApi",
-                "section": "def-public.IToasts",
-                "text": "IToasts"
-              }
+              "IToasts"
             ],
-            "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+            "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+            "lineNumber": 18,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -240,7 +260,9 @@
             "signature": [
               "{ namespace: boolean; global: boolean; }"
             ],
-            "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+            "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+            "lineNumber": 19,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           }
@@ -256,7 +278,9 @@
         "description": [
           "\nA registry entry for a section."
         ],
-        "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+        "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+        "lineNumber": 22,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -286,7 +310,9 @@
               },
               ">"
             ],
-            "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+            "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+            "lineNumber": 26,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -300,7 +326,9 @@
             "signature": [
               "(term: string) => boolean"
             ],
-            "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+            "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+            "lineNumber": 27,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -312,7 +340,9 @@
                 "tags": [],
                 "label": "term",
                 "description": [],
-                "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+                "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+                "lineNumber": 32,
+                "columnNumber": 22,
                 "deprecated": false,
                 "trackAdoption": false
               }
@@ -336,7 +366,9 @@
         "signature": [
           "{ addSpaceSection: (Component: RegistryComponent, queryMatch: QueryMatchFn) => void; addGlobalSection: (Component: RegistryComponent, queryMatch: QueryMatchFn) => void; }"
         ],
-        "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+        "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+        "lineNumber": 83,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false
@@ -369,7 +401,9 @@
           },
           "[]; }"
         ],
-        "path": "packages/kbn-management/settings/section_registry/section_registry.ts",
+        "path": "src/platform/packages/shared/kbn-management/settings/section_registry/section_registry.ts",
+        "lineNumber": 88,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "initialIsOpen": false

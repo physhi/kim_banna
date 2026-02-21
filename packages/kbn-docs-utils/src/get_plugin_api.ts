@@ -1,16 +1,18 @@
 /*
  * Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
- * or more contributor license agreements. Licensed under the Elastic License
- * 2.0 and the Server Side Public License, v 1; you may not use this file except
- * in compliance with, at your election, the Elastic License 2.0 or the Server
- * Side Public License, v 1.
+ * or more contributor license agreements. Licensed under the "Elastic License
+ * 2.0", the "GNU Affero General Public License v3.0 only", and the "Server Side
+ * Public License v 1"; you may not use this file except in compliance with, at
+ * your election, the "Elastic License 2.0", the "GNU Affero General Public
+ * License v3.0 only", or the "Server Side Public License, v 1".
  */
 
 import Path from 'path';
-import { Node, Project } from 'ts-morph';
-import { ToolingLog } from '@kbn/tooling-log';
-import { ApiScope, Lifecycle, PluginOrPackage } from './types';
-import { ApiDeclaration, PluginApi } from './types';
+import type { Node, Project } from 'ts-morph';
+import type { ToolingLog } from '@kbn/tooling-log';
+import type { PluginOrPackage } from './types';
+import { ApiScope, Lifecycle } from './types';
+import type { ApiDeclaration, PluginApi } from './types';
 import { buildApiDeclarationTopNode } from './build_api_declarations/build_api_declaration';
 import { getDeclarationNodesForPluginScope } from './get_declaration_nodes_for_plugin';
 import { getSourceFileMatching } from './tsmorph_utils';

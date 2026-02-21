@@ -19,7 +19,9 @@
         "tags": [],
         "label": "CustomBrandingSetup",
         "description": [],
-        "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+        "path": "src/core/packages/custom-branding/server/types.ts",
+        "lineNumber": 23,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -32,16 +34,12 @@
             "description": [],
             "signature": [
               "(fetchFn: ",
-              {
-                "pluginId": "@kbn/core-custom-branding-server",
-                "scope": "server",
-                "docId": "kibKbnCoreCustomBrandingServerPluginApi",
-                "section": "def-server.CustomBrandingFetchFn",
-                "text": "CustomBrandingFetchFn"
-              },
+              "CustomBrandingFetchFn",
               ") => void"
             ],
-            "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+            "path": "src/core/packages/custom-branding/server/types.ts",
+            "lineNumber": 25,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -53,15 +51,11 @@
                 "label": "fetchFn",
                 "description": [],
                 "signature": [
-                  {
-                    "pluginId": "@kbn/core-custom-branding-server",
-                    "scope": "server",
-                    "docId": "kibKbnCoreCustomBrandingServerPluginApi",
-                    "section": "def-server.CustomBrandingFetchFn",
-                    "text": "CustomBrandingFetchFn"
-                  }
+                  "CustomBrandingFetchFn"
                 ],
-                "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+                "path": "src/core/packages/custom-branding/server/types.ts",
+                "lineNumber": 25,
+                "columnNumber": 14,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -78,24 +72,14 @@
             "description": [],
             "signature": [
               "(request: ",
-              {
-                "pluginId": "@kbn/core-http-server",
-                "scope": "server",
-                "docId": "kibKbnCoreHttpServerPluginApi",
-                "section": "def-server.KibanaRequest",
-                "text": "KibanaRequest"
-              },
+              "KibanaRequest",
               "<unknown, unknown, unknown, any>, options: { unauthenticated?: boolean | undefined; }) => Promise<",
-              {
-                "pluginId": "@kbn/core-custom-branding-common",
-                "scope": "common",
-                "docId": "kibKbnCoreCustomBrandingCommonPluginApi",
-                "section": "def-common.CustomBranding",
-                "text": "CustomBranding"
-              },
+              "CustomBranding",
               ">"
             ],
-            "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+            "path": "src/core/packages/custom-branding/server/types.ts",
+            "lineNumber": 26,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "children": [
@@ -107,16 +91,12 @@
                 "label": "request",
                 "description": [],
                 "signature": [
-                  {
-                    "pluginId": "@kbn/core-http-server",
-                    "scope": "server",
-                    "docId": "kibKbnCoreHttpServerPluginApi",
-                    "section": "def-server.KibanaRequest",
-                    "text": "KibanaRequest"
-                  },
+                  "KibanaRequest",
                   "<unknown, unknown, unknown, any>"
                 ],
-                "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+                "path": "src/core/packages/custom-branding/server/types.ts",
+                "lineNumber": 27,
+                "columnNumber": 5,
                 "deprecated": false,
                 "trackAdoption": false,
                 "isRequired": true
@@ -128,7 +108,9 @@
                 "tags": [],
                 "label": "options",
                 "description": [],
-                "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+                "path": "src/core/packages/custom-branding/server/types.ts",
+                "lineNumber": 28,
+                "columnNumber": 14,
                 "deprecated": false,
                 "trackAdoption": false,
                 "children": [
@@ -142,7 +124,9 @@
                     "signature": [
                       "boolean | undefined"
                     ],
-                    "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+                    "path": "src/core/packages/custom-branding/server/types.ts",
+                    "lineNumber": 28,
+                    "columnNumber": 16,
                     "deprecated": false,
                     "trackAdoption": false
                   }
@@ -161,7 +145,9 @@
         "tags": [],
         "label": "CustomBrandingStart",
         "description": [],
-        "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+        "path": "src/core/packages/custom-branding/server/types.ts",
+        "lineNumber": 14,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "children": [],
@@ -179,13 +165,7 @@
         "description": [],
         "signature": [
           "(request: ",
-          {
-            "pluginId": "@kbn/core-http-server",
-            "scope": "server",
-            "docId": "kibKbnCoreHttpServerPluginApi",
-            "section": "def-server.KibanaRequest",
-            "text": "KibanaRequest"
-          },
+          "KibanaRequest",
           "<unknown, unknown, unknown, any>, unauthenticated: boolean) => ",
           {
             "pluginId": "@kbn/utility-types",
@@ -195,16 +175,12 @@
             "text": "MaybePromise"
           },
           "<",
-          {
-            "pluginId": "@kbn/core-custom-branding-common",
-            "scope": "common",
-            "docId": "kibKbnCoreCustomBrandingCommonPluginApi",
-            "section": "def-common.CustomBranding",
-            "text": "CustomBranding"
-          },
+          "CustomBranding",
           ">"
         ],
-        "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+        "path": "src/core/packages/custom-branding/server/types.ts",
+        "lineNumber": 18,
+        "columnNumber": 1,
         "deprecated": false,
         "trackAdoption": false,
         "returnComment": [],
@@ -217,16 +193,12 @@
             "label": "request",
             "description": [],
             "signature": [
-              {
-                "pluginId": "@kbn/core-http-server",
-                "scope": "server",
-                "docId": "kibKbnCoreHttpServerPluginApi",
-                "section": "def-server.KibanaRequest",
-                "text": "KibanaRequest"
-              },
+              "KibanaRequest",
               "<unknown, unknown, unknown, any>"
             ],
-            "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+            "path": "src/core/packages/custom-branding/server/types.ts",
+            "lineNumber": 19,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           },
@@ -237,7 +209,9 @@
             "tags": [],
             "label": "unauthenticated",
             "description": [],
-            "path": "packages/core/custom-branding/core-custom-branding-server/types.ts",
+            "path": "src/core/packages/custom-branding/server/types.ts",
+            "lineNumber": 20,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false
           }

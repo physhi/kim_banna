@@ -14,7 +14,9 @@
         "tags": [],
         "label": "settingsServiceMock",
         "description": [],
-        "path": "packages/core/ui-settings/core-ui-settings-browser-mocks/src/settings_service.mock.ts",
+        "path": "src/core/packages/ui-settings/browser-mocks/src/settings_service.mock.ts",
+        "lineNumber": 30,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -28,7 +30,9 @@
             "signature": [
               "() => any"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-mocks/src/settings_service.mock.ts",
+            "path": "src/core/packages/ui-settings/browser-mocks/src/settings_service.mock.ts",
+            "lineNumber": 31,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -43,24 +47,14 @@
             "description": [],
             "signature": [
               "() => { client: jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-ui-settings-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreUiSettingsBrowserPluginApi",
-                "section": "def-public.IUiSettingsClient",
-                "text": "IUiSettingsClient"
-              },
+              "IUiSettingsClient",
               ">; globalClient: jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-ui-settings-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreUiSettingsBrowserPluginApi",
-                "section": "def-public.IUiSettingsClient",
-                "text": "IUiSettingsClient"
-              },
+              "IUiSettingsClient",
               ">; }"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-mocks/src/settings_service.mock.ts",
+            "path": "src/core/packages/ui-settings/browser-mocks/src/settings_service.mock.ts",
+            "lineNumber": 32,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -75,24 +69,14 @@
             "description": [],
             "signature": [
               "() => { client: jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-ui-settings-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreUiSettingsBrowserPluginApi",
-                "section": "def-public.IUiSettingsClient",
-                "text": "IUiSettingsClient"
-              },
+              "IUiSettingsClient",
               ">; globalClient: jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-ui-settings-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreUiSettingsBrowserPluginApi",
-                "section": "def-public.IUiSettingsClient",
-                "text": "IUiSettingsClient"
-              },
+              "IUiSettingsClient",
               ">; }"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-mocks/src/settings_service.mock.ts",
+            "path": "src/core/packages/ui-settings/browser-mocks/src/settings_service.mock.ts",
+            "lineNumber": 33,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -108,7 +92,9 @@
         "tags": [],
         "label": "uiSettingsServiceMock",
         "description": [],
-        "path": "packages/core/ui-settings/core-ui-settings-browser-mocks/src/ui_settings_service.mock.ts",
+        "path": "src/core/packages/ui-settings/browser-mocks/src/ui_settings_service.mock.ts",
+        "lineNumber": 23,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -122,7 +108,9 @@
             "signature": [
               "() => any"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-mocks/src/ui_settings_service.mock.ts",
+            "path": "src/core/packages/ui-settings/browser-mocks/src/ui_settings_service.mock.ts",
+            "lineNumber": 24,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -137,16 +125,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-ui-settings-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreUiSettingsBrowserPluginApi",
-                "section": "def-public.IUiSettingsClient",
-                "text": "IUiSettingsClient"
-              },
+              "IUiSettingsClient",
               ">"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-mocks/src/ui_settings_service.mock.ts",
+            "path": "src/core/packages/ui-settings/browser-mocks/src/ui_settings_service.mock.ts",
+            "lineNumber": 25,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -161,16 +145,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-ui-settings-browser",
-                "scope": "public",
-                "docId": "kibKbnCoreUiSettingsBrowserPluginApi",
-                "section": "def-public.IUiSettingsClient",
-                "text": "IUiSettingsClient"
-              },
+              "IUiSettingsClient",
               ">"
             ],
-            "path": "packages/core/ui-settings/core-ui-settings-browser-mocks/src/ui_settings_service.mock.ts",
+            "path": "src/core/packages/ui-settings/browser-mocks/src/ui_settings_service.mock.ts",
+            "lineNumber": 26,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],

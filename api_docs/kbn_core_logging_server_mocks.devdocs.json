@@ -22,7 +22,9 @@
         "tags": [],
         "label": "loggingServiceMock",
         "description": [],
-        "path": "packages/core/logging/core-logging-server-mocks/src/logging_service.mock.ts",
+        "path": "src/core/packages/logging/server-mocks/src/logging_service.mock.ts",
+        "lineNumber": 46,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -36,7 +38,9 @@
             "signature": [
               "() => jest.Mocked<LoggingServiceContract>"
             ],
-            "path": "packages/core/logging/core-logging-server-mocks/src/logging_service.mock.ts",
+            "path": "src/core/packages/logging/server-mocks/src/logging_service.mock.ts",
+            "lineNumber": 47,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -51,16 +55,12 @@
             "description": [],
             "signature": [
               "() => jest.Mocked<",
-              {
-                "pluginId": "@kbn/core-logging-server",
-                "scope": "server",
-                "docId": "kibKbnCoreLoggingServerPluginApi",
-                "section": "def-server.LoggingServiceSetup",
-                "text": "LoggingServiceSetup"
-              },
+              "LoggingServiceSetup",
               ">"
             ],
-            "path": "packages/core/logging/core-logging-server-mocks/src/logging_service.mock.ts",
+            "path": "src/core/packages/logging/server-mocks/src/logging_service.mock.ts",
+            "lineNumber": 48,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -78,7 +78,9 @@
               "InternalLoggingServicePreboot",
               ">"
             ],
-            "path": "packages/core/logging/core-logging-server-mocks/src/logging_service.mock.ts",
+            "path": "src/core/packages/logging/server-mocks/src/logging_service.mock.ts",
+            "lineNumber": 49,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -96,7 +98,9 @@
               "InternalLoggingServicePreboot",
               ">"
             ],
-            "path": "packages/core/logging/core-logging-server-mocks/src/logging_service.mock.ts",
+            "path": "src/core/packages/logging/server-mocks/src/logging_service.mock.ts",
+            "lineNumber": 50,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -112,7 +116,9 @@
         "tags": [],
         "label": "loggingSystemMock",
         "description": [],
-        "path": "packages/core/logging/core-logging-server-mocks/src/logging_system.mock.ts",
+        "path": "src/core/packages/logging/server-mocks/src/logging_system.mock.ts",
+        "lineNumber": 61,
+        "columnNumber": 14,
         "deprecated": false,
         "trackAdoption": false,
         "children": [
@@ -128,7 +134,9 @@
               "ILoggingSystem",
               ">"
             ],
-            "path": "packages/core/logging/core-logging-server-mocks/src/logging_system.mock.ts",
+            "path": "src/core/packages/logging/server-mocks/src/logging_system.mock.ts",
+            "lineNumber": 62,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -202,7 +210,9 @@
               },
               " | undefined])[]; }"
             ],
-            "path": "packages/core/logging/core-logging-server-mocks/src/logging_system.mock.ts",
+            "path": "src/core/packages/logging/server-mocks/src/logging_system.mock.ts",
+            "lineNumber": 63,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -223,7 +233,9 @@
                     "text": "LoggerFactory"
                   }
                 ],
-                "path": "packages/core/logging/core-logging-server-mocks/src/logging_system.mock.ts",
+                "path": "src/core/packages/logging/server-mocks/src/logging_system.mock.ts",
+                "lineNumber": 45,
+                "columnNumber": 35,
                 "deprecated": false,
                 "trackAdoption": false
               }
@@ -247,7 +259,9 @@
               },
               ") => void"
             ],
-            "path": "packages/core/logging/core-logging-server-mocks/src/logging_system.mock.ts",
+            "path": "src/core/packages/logging/server-mocks/src/logging_system.mock.ts",
+            "lineNumber": 64,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -268,7 +282,9 @@
                     "text": "LoggerFactory"
                   }
                 ],
-                "path": "packages/core/logging/core-logging-server-mocks/src/logging_system.mock.ts",
+                "path": "src/core/packages/logging/server-mocks/src/logging_system.mock.ts",
+                "lineNumber": 50,
+                "columnNumber": 33,
                 "deprecated": false,
                 "trackAdoption": false
               }
@@ -291,7 +307,9 @@
                 "text": "MockedLogger"
               }
             ],
-            "path": "packages/core/logging/core-logging-server-mocks/src/logging_system.mock.ts",
+            "path": "src/core/packages/logging/server-mocks/src/logging_system.mock.ts",
+            "lineNumber": 65,
+            "columnNumber": 3,
             "deprecated": false,
             "trackAdoption": false,
             "returnComment": [],
@@ -306,7 +324,9 @@
                 "signature": [
                   "string[]"
                 ],
-                "path": "packages/kbn-logging-mocks/src/logger.mock.ts",
+                "path": "src/platform/packages/shared/kbn-logging-mocks/src/logger.mock.ts",
+                "lineNumber": 15,
+                "columnNumber": 27,
                 "deprecated": false,
                 "trackAdoption": false
               }
