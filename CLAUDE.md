@@ -87,6 +87,36 @@ Internal packages use `@kbn/` prefix with Yarn `link:` dependencies. Path aliase
 - **FTR tests**: Never use `sleep()` — use `retry.waitFor()` or `testSubjects.existsOrFail()`
 - **Test data setup**: Prefer API-based setup over UI automation in functional tests
 
+## Docker Build (Custom)
+
+This repo includes a custom `Dockerfile.build` that builds Kibana from source inside Docker and produces a Wolfi-based production image. No host Node.js installation is needed.
+
+### Build this branch (8.19 / version 8.19.11)
+
+```bash
+docker build -f Dockerfile.build -t kibana-custom:8.19 .
+```
+
+### Build all branches (main, 8.19, 9.3)
+
+```bash
+./build_all_branches.sh
+```
+
+### Run
+
+```bash
+docker run -p 5601:5601 kibana-custom:8.19
+```
+
+### Build details
+
+- **Dockerfile**: `Dockerfile.build` (multi-stage: node:22-bookworm builder + chainguard/wolfi-base production)
+- **Script**: `build_all_branches.sh` (loops over branches, reads `.node-version` and `package.json`)
+- **Output**: Wolfi x86_64 production image with tini init, CJK fonts, kibana user (UID 1000)
+- **Skipped variants**: UBI, cloud, cloud-FIPS, serverless, FIPS, Docker contexts, CDN assets
+- **This branch version**: 8.19.11
+
 ## Key Developer Docs
 
 - Setup: `dev_docs/getting_started/setting_up_a_development_env.mdx`
