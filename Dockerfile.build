@@ -1,0 +1,121 @@
+################################################################################
+# Dockerfile.build — Build Kibana from source and produce a production image
+#
+# Usage:
+#   docker build -f Dockerfile.build -t kibana-custom:<version> .
+#
+# The build reads .node-version to determine the correct Node.js runtime.
+# Output is a Wolfi-based production image similar to the official Kibana image.
+################################################################################
+
+# ---------- Stage 1: Build Kibana from source ----------
+FROM node:22-bookworm AS builder
+
+# Increase memory for the build
+ENV NODE_OPTIONS="--max-old-space-size=8192"
+
+WORKDIR /kibana
+# Copy dependency manifests first for better layer caching
+COPY package.json yarn.lock .yarnrc ./
+COPY .node-version ./
+COPY packages/ packages/
+COPY x-pack/ x-pack/
+COPY src/ src/
+COPY config/ config/
+COPY typings/ typings/
+COPY tsconfig.base.json tsconfig.json ./
+COPY .browserslistrc .eslintrc.js .prettierrc ./
+COPY scripts/ scripts/
+COPY .bazelignore .bazeliskversion .bazelrc .bazelversion WORKSPACE.bazel BUILD.bazel ./
+# Copy remaining files needed for bootstrap and build
+COPY . .
+
+# Bootstrap dependencies
+RUN yarn kbn bootstrap
+
+# Build the distributable — produce only the linux-x64 archive and Wolfi Docker image context
+# We skip all other Docker variants and OS packages to speed up the build.
+RUN node scripts/build \
+      --skip-docker-cloud \
+      --skip-docker-cloud-fips \
+      --skip-docker-serverless \
+      --skip-docker-fips \
+      --skip-docker-ubi \
+      --skip-docker-contexts \
+      --skip-cdn-assets \
+      --skip-cloud-dependencies-download
+
+# Find the built linux tarball — its name includes the version
+RUN ls -la /kibana/target/ && \
+    TARBALL=$(ls /kibana/target/kibana-*-linux-x86_64.tar.gz 2>/dev/null || ls /kibana/target/kibana-*-linux-amd64.tar.gz 2>/dev/null) && \
+    echo "Found tarball: $TARBALL" && \
+    mkdir -p /usr/share/kibana && \
+    tar --strip-components=1 -zxf "$TARBALL" -C /usr/share/kibana
+
+# Ensure group-readable permissions (for OpenShift compatibility)
+RUN chmod -R g=u /usr/share/kibana
+
+# Download tini init process
+RUN set -e ; \
+    TINI_VERSION='v0.19.0' ; \
+    TINI_BIN='tini-amd64' ; \
+    TINI_CHECKSUM='93dcc18adc78c65a028a84799ecf8ad40c936fdfc5f2a57b1acda5a8117fa82c' ; \
+    curl -fsSL -o /bin/tini "https://github.com/krallin/tini/releases/download/${TINI_VERSION}/${TINI_BIN}" && \
+    echo "${TINI_CHECKSUM}  /bin/tini" | sha256sum -c - && \
+    chmod +x /bin/tini
+
+# Download CJK fonts for reporting
+RUN mkdir -p /usr/share/fonts/local && \
+    curl -fsSL -o /usr/share/fonts/local/NotoSansCJK-Regular.ttc \
+      https://github.com/googlefonts/noto-cjk/raw/NotoSansV2.001/NotoSansCJK-Regular.ttc && \
+    echo "5dcd1c336cc9344cb77c03a0cd8982ca8a7dc97d620fd6c9c434e02dcb1ceeb3  /usr/share/fonts/local/NotoSansCJK-Regular.ttc" | sha256sum -c -
+
+# ---------- Stage 2: Production image ----------
+FROM chainguard/wolfi-base:latest
+
+EXPOSE 5601
+
+# Install runtime dependencies
+RUN apk --no-cache add bash curl fontconfig font-liberation libstdc++ libnss findutils shadow ca-certificates
+
+# Copy Kibana from builder
+COPY --from=builder --chown=1000:0 /usr/share/kibana /usr/share/kibana
+COPY --from=builder --chown=0:0 /bin/tini /bin/tini
+COPY --from=builder --chown=0:0 /usr/share/fonts/local/NotoSansCJK-Regular.ttc /usr/share/fonts/local/NotoSansCJK-Regular.ttc
+
+# Refresh font cache
+RUN fc-cache -v
+
+WORKDIR /usr/share/kibana
+
+# Symlink for compatibility
+RUN ln -s /usr/share/kibana /opt/kibana
+
+# Environment
+ENV ELASTIC_CONTAINER=true
+ENV PATH=/usr/share/kibana/bin:$PATH
+
+# Default kibana.yml — bind to all interfaces for Docker
+RUN echo 'server.host: "0.0.0.0"' > /usr/share/kibana/config/kibana.yml && \
+    echo 'server.shutdownTimeout: "5s"' >> /usr/share/kibana/config/kibana.yml
+
+# Copy the entrypoint wrapper from the built distribution
+# (it's already in /usr/share/kibana/bin/kibana)
+
+# Ensure gid 0 write permissions for OpenShift
+RUN chmod g+ws /usr/share/kibana && \
+    find /usr/share/kibana -gid 0 -and -not -perm /g+w -exec chmod g+w {} \;
+
+# Remove suid bits to mitigate "Stack Clash"
+RUN find / -xdev -perm -4000 -exec chmod u-s {} + 2>/dev/null || true
+
+# Create kibana user
+RUN groupadd --gid 1000 kibana && \
+    useradd --uid 1000 --gid 1000 -G 0 \
+      --home-dir /usr/share/kibana --no-create-home \
+      kibana
+
+ENTRYPOINT ["/bin/tini", "--"]
+CMD ["/usr/share/kibana/bin/kibana"]
+
+USER 1000
