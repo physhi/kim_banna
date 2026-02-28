@@ -14,21 +14,24 @@ FROM node:22-bookworm AS builder
 # Increase memory for the build
 ENV NODE_OPTIONS="--max-old-space-size=8192"
 
+# Use the existing 'node' user (UID 1000) — Kibana refuses to run as root
+RUN mkdir -p /kibana && chown node:node /kibana
 WORKDIR /kibana
-# Copy dependency manifests first for better layer caching
-COPY package.json yarn.lock .yarnrc ./
-COPY .node-version ./
-COPY packages/ packages/
-COPY x-pack/ x-pack/
-COPY src/ src/
-COPY config/ config/
-COPY typings/ typings/
-COPY tsconfig.base.json tsconfig.json ./
-COPY .browserslistrc .eslintrc.js .prettierrc ./
-COPY scripts/ scripts/
-COPY .bazelignore .bazeliskversion .bazelrc .bazelversion WORKSPACE.bazel BUILD.bazel ./
-# Copy remaining files needed for bootstrap and build
-COPY . .
+# Copy the entire source tree (relies on .dockerignore to exclude .git, node_modules, etc.)
+COPY --chown=node:node . .
+
+# Fix Windows CRLF line endings in shell scripts (critical when building on Windows)
+USER 0
+RUN find /kibana -type f -name '*.sh' -exec sed -i 's/\r$//' {} + && \
+    sed -i 's/\r$//' /kibana/.buildkite/scripts/common/*.sh 2>/dev/null || true
+USER node
+
+# Initialize a git repo — kbn bootstrap uses git ls-files to discover config files
+RUN git config --global user.email "build@docker" && \
+    git config --global user.name "build" && \
+    git init && \
+    git add -A && \
+    git commit -m "build" --no-verify 2>/dev/null || true
 
 # Bootstrap dependencies
 RUN yarn kbn bootstrap
@@ -44,6 +47,9 @@ RUN node scripts/build \
       --skip-docker-contexts \
       --skip-cdn-assets \
       --skip-cloud-dependencies-download
+
+# Switch back to root for tarball extraction and downloads
+USER 0
 
 # Find the built linux tarball — its name includes the version
 RUN ls -la /kibana/target/ && \
@@ -98,9 +104,6 @@ ENV PATH=/usr/share/kibana/bin:$PATH
 # Default kibana.yml — bind to all interfaces for Docker
 RUN echo 'server.host: "0.0.0.0"' > /usr/share/kibana/config/kibana.yml && \
     echo 'server.shutdownTimeout: "5s"' >> /usr/share/kibana/config/kibana.yml
-
-# Copy the entrypoint wrapper from the built distribution
-# (it's already in /usr/share/kibana/bin/kibana)
 
 # Ensure gid 0 write permissions for OpenShift
 RUN chmod g+ws /usr/share/kibana && \

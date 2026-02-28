@@ -1,1 +1,6 @@
 **/__snapshots__/** linguist-generated=true
+
+# Force LF line endings for shell scripts (critical for Docker/Linux builds)
+*.sh text eol=lf
+Dockerfile* text eol=lf
+.dockerignore text eol=lf
