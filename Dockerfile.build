@@ -20,9 +20,10 @@ WORKDIR /kibana
 # Copy the entire source tree (relies on .dockerignore to exclude .git, node_modules, etc.)
 COPY --chown=node:node . .
 
-# Fix Windows CRLF line endings in shell scripts (critical when building on Windows)
+# Fix Windows CRLF line endings in shell scripts and config files (critical when building on Windows)
 USER 0
 RUN find /kibana -type f -name '*.sh' -exec sed -i 's/\r$//' {} + && \
+    find /kibana -type f -name '*.options' -exec sed -i 's/\r$//' {} + && \
     sed -i 's/\r$//' /kibana/.buildkite/scripts/common/*.sh 2>/dev/null || true
 USER node
 
@@ -88,6 +89,10 @@ RUN apk --no-cache add bash curl fontconfig font-liberation libstdc++ libnss fin
 COPY --from=builder --chown=1000:0 /usr/share/kibana /usr/share/kibana
 COPY --from=builder --chown=0:0 /bin/tini /bin/tini
 COPY --from=builder --chown=0:0 /usr/share/fonts/local/NotoSansCJK-Regular.ttc /usr/share/fonts/local/NotoSansCJK-Regular.ttc
+
+# Fix any residual CRLF line endings in the production image
+RUN find /usr/share/kibana/bin -type f -exec sed -i 's/\r$//' {} + && \
+    find /usr/share/kibana/config -type f -exec sed -i 's/\r$//' {} +
 
 # Refresh font cache
 RUN fc-cache -v
