@@ -1,0 +1,12 @@
+.git
+node_modules
+.cache
+target
+build
+data
+.es
+.chromium
+.node_binaries
+.babel_register_cache
+.eslintcache
+*.log
