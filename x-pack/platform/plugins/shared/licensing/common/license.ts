@@ -70,7 +70,7 @@ export class License implements ILicense {
       this.mode = license.mode;
     }
 
-    this.isActive = this.status === 'active';
+    this.isActive = true;
   }
 
   toJSON() {
